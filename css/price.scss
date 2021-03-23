@@ -1,0 +1,73 @@
+@charset "utf-8";
+
+/* price */
+
+.price {
+
+  height: 744px;
+  background-color: #EEFBFB;
+
+  .price-container {
+
+    width: 75%;
+    margin: 0 auto;
+
+    .price-title {
+
+      text-align: center;
+      padding-top: 64px;
+
+      .price-titletext {
+
+        font-size: 32px;
+        font-weight: bold;
+        line-height: 0.9;
+        margin-bottom: 23px;
+      }
+
+      .price-subtext {
+
+        font-size: 16px;
+        font-weight: bold;
+        line-height: 1.2;
+        color: #3BA6C9;
+      }
+    }
+
+    .price-table {
+
+      margin: 71px auto 41px;
+      box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
+      background-color: white;
+
+      tr {
+
+        th {
+
+          padding: 40px 34px 37px 19px;
+          border: solid 1px #E5E5E5;
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 1.8;
+        }
+
+        td {
+
+          padding: 40px 526px 37px 31px;
+          border: solid 1px #E5E5E5;
+          font-size: 16px;
+          font-weight: bold;
+          line-height: 1.8;
+        }
+      }
+    }
+
+    .price-caution {
+
+      text-align: center;
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.6;
+    }
+  }
+}

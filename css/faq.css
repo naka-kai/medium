@@ -1,0 +1,56 @@
+/* faq */
+.faq {
+  height: 620px;
+}
+
+.faq .faq-container {
+  width: 75%;
+  margin: 0 auto;
+}
+
+.faq .faq-container .faq-title {
+  text-align: center;
+  margin: 64px 0 33px;
+}
+
+.faq .faq-container .faq-title .faq-titletext {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 0.9;
+  margin-bottom: 23px;
+}
+
+.faq .faq-container .faq-title .faq-subtext {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #3BA6C9;
+}
+
+.faq .faq-container .faq-list .faq-item:last-child {
+  border-bottom: 1px solid #E5E5E5;
+}
+
+.faq .faq-container .faq-list .faq-item dt {
+  padding: 22px 0;
+  border: 1px solid #E5E5E5;
+  border-bottom: none;
+  text-align: center;
+  cursor: pointer;
+}
+
+.faq .faq-container .faq-list .faq-item dd {
+  padding: 21px 0 32px;
+  border: 1px solid #E5E5E5;
+  border-top: none;
+  border-bottom: none;
+  margin: 0 auto;
+  text-align: center;
+  background-color: #F2F2F2;
+}
+
+.faq .faq-container .faq-list .faq-item dd p {
+  display: inline-block;
+  text-align: left;
+}
+/*# sourceMappingURL=faq.css.map */

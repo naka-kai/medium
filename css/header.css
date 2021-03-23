@@ -1,0 +1,121 @@
+/* header */
+header .header-container {
+  padding-left: 12.5%;
+  padding-right: 12.5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 75%;
+  margin: 0 auto;
+  height: 94px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+  position: fixed;
+  z-index: 2;
+  background-color: white;
+}
+
+header .header-container .header-left a {
+  text-decoration: none;
+  color: #333;
+  font-size: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  line-height: 1.2;
+  font-weight: bold;
+}
+
+header .header-container .header-left a img {
+  width: 47px;
+  height: 47px;
+}
+
+header .header-container .header-left a p {
+  margin-left: 16px;
+}
+
+header .header-container .header-center .header-nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 252px;
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 1.2;
+}
+
+header .header-container .header-center .header-nav .header-feature {
+  list-style: none;
+}
+
+header .header-container .header-center .header-nav .header-feature a {
+  text-decoration: none;
+  color: #333;
+}
+
+header .header-container .header-center .header-nav .header-price {
+  list-style: none;
+}
+
+header .header-container .header-center .header-nav .header-price a {
+  text-decoration: none;
+  color: #333;
+}
+
+header .header-container .header-center .header-nav .header-contact {
+  list-style: none;
+}
+
+header .header-container .header-center .header-nav .header-contact a {
+  text-decoration: none;
+  color: #333;
+}
+
+header .header-container .header-right {
+  margin-right: 21px;
+}
+
+header .header-container .header-right .contact-btn {
+  width: 155px;
+  height: 37px;
+  -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+  border-radius: 10px;
+}
+
+header .header-container .header-right .contact-btn a {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: white;
+  text-decoration: none;
+  display: block;
+  width: 155px;
+  height: 37px;
+  background: -webkit-gradient(linear, left top, right top, from(#FA41CC), to(#6020B0));
+  background: linear-gradient(to right, #FA41CC, #6020B0);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border-radius: 10px;
+}
+/*# sourceMappingURL=header.css.map */

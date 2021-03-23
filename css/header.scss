@@ -1,0 +1,116 @@
+/* header */
+
+header {
+
+  .header-container {
+
+    padding-left: 12.5%;
+    padding-right: 12.5%;
+
+    display: flex;
+    width: 75%;
+    margin: 0 auto;
+    height: 94px;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    position: fixed;
+    z-index: 2;
+    background-color: white;
+
+    .header-left {
+
+      a {
+
+        text-decoration: none;
+        color: #333;
+        font-size: 24px;
+        display: flex;
+        align-items: center;
+        line-height: 1.2;
+        font-weight: bold;
+
+        img {
+          width: 47px;
+          height: 47px;
+        }
+
+        p {
+          margin-left: 16px;
+        }
+      }
+    }
+
+    .header-center {
+
+      .header-nav {
+
+        display: flex;
+        justify-content: space-between;
+        width: 252px;
+        font-weight: bold;
+        font-size: 16px;
+        line-height: 1.2;
+
+        .header-feature {
+
+          list-style: none;
+
+
+          a {
+            text-decoration: none;
+            color: #333;
+          }
+        }
+
+        .header-price {
+
+          list-style: none;
+
+          a {
+            text-decoration: none;
+            color: #333;
+          }
+        }
+
+        .header-contact {
+
+          list-style: none;
+
+          a {
+            text-decoration: none;
+            color: #333;
+          }
+        }
+      }
+    }
+
+    .header-right {
+
+      margin-right: 21px;
+
+      .contact-btn {
+        width: 155px;
+        height: 37px;
+        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+        border-radius: 10px;
+
+        a {
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 1.2;
+          color: white;
+          text-decoration: none;
+          display: block;
+          width: 155px;
+          height: 37px;
+          background: linear-gradient(to right, #FA41CC, #6020B0);
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+}
