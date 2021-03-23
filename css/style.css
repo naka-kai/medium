@@ -2,6 +2,7 @@
 /* 全体構造 */
 html {
   overflow: auto;
+  scroll-padding-top: 97px;
 }
 
 body {

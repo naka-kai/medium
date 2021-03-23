@@ -15,6 +15,5 @@ $(function () {
     slidesPerView: 3.5,
     spaceBetween: 40,
     initialSlide: 1,
-    // centeredSlides: true,
   });
 });
