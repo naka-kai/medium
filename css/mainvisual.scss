@@ -3,12 +3,10 @@
 /* mainvisual */
 
 .mainvisual {
-
   padding-top: 94px;
   height: 674px;
 
   .mainvisual-container {
-
     width: 75%;
     margin: 0 auto;
     display: flex;
@@ -16,22 +14,22 @@
     z-index: 1;
 
     .mainvisual-left {
-
       h1 {
         margin: 168px 0 29px;
         font-size: 32px;
         font-weight: bold;
         line-height: 1.2;
+        color: #333333;
       }
 
       p {
         font-size: 16px;
         font-weight: bold;
         line-height: 1.2;
+        color: #333333;
       }
 
       .contact-btn {
-
         margin-top: 39px;
         width: 155px;
         height: 37px;
@@ -42,7 +40,7 @@
           font-size: 14px;
           font-weight: bold;
           line-height: 1.2;
-          color: white;
+          color: #FFFFFF;
           text-decoration: none;
           display: block;
           width: 155px;
@@ -59,7 +57,6 @@
     .mainvisual-right {
 
       .main {
-
         width: 518px;
         height: 430px;
         position: absolute;
@@ -71,7 +68,6 @@
 }
 
 .circle {
-
   width: 708px;
   height: 711px;
   position: absolute;

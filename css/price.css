@@ -18,6 +18,7 @@
   font-size: 32px;
   font-weight: bold;
   line-height: 0.9;
+  color: #333333;
   margin-bottom: 23px;
 }
 
@@ -41,6 +42,7 @@
   font-size: 16px;
   font-weight: bold;
   line-height: 1.8;
+  color: #333333;
 }
 
 .price .price-container .price-table tr td {
@@ -49,6 +51,7 @@
   font-size: 16px;
   font-weight: bold;
   line-height: 1.8;
+  color: #333333;
 }
 
 .price .price-container .price-caution {
@@ -56,5 +59,6 @@
   font-size: 16px;
   font-weight: bold;
   line-height: 1.6;
+  color: #444444;
 }
 /*# sourceMappingURL=price.css.map */

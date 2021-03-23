@@ -3,7 +3,6 @@
 header {
 
   .header-container {
-
     padding-left: 12.5%;
     padding-right: 12.5%;
 
@@ -21,7 +20,6 @@ header {
     .header-left {
 
       a {
-
         text-decoration: none;
         color: #333;
         font-size: 24px;
@@ -37,6 +35,10 @@ header {
 
         p {
           margin-left: 16px;
+          font-size: 24px;
+          font-weight: bold;
+          line-height: 1.2;
+          color: #333333;
         }
       }
     }
@@ -44,7 +46,6 @@ header {
     .header-center {
 
       .header-nav {
-
         display: flex;
         justify-content: space-between;
         width: 252px;
@@ -53,13 +54,14 @@ header {
         line-height: 1.2;
 
         .header-feature {
-
           list-style: none;
-
 
           a {
             text-decoration: none;
             color: #333;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.2;
           }
         }
 
@@ -70,23 +72,27 @@ header {
           a {
             text-decoration: none;
             color: #333;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.2;
           }
         }
 
         .header-contact {
-
           list-style: none;
 
           a {
             text-decoration: none;
             color: #333;
+            font-size: 16px;
+            font-weight: bold;
+            line-height: 1.2;
           }
         }
       }
     }
 
     .header-right {
-
       margin-right: 21px;
 
       .contact-btn {
@@ -99,7 +105,7 @@ header {
           font-size: 14px;
           font-weight: bold;
           line-height: 1.2;
-          color: white;
+          color: #FFFFFF;
           text-decoration: none;
           display: block;
           width: 155px;

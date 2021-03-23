@@ -61,6 +61,8 @@
 }
 
 .contact .contact-container .contact-form form .contact-name .contact-name-label-wrapper span {
+  font-size: 14px;
+  line-height: 1.9;
   color: white;
   background-color: #0C449B;
   padding: 8px 16px;
@@ -91,6 +93,8 @@
 }
 
 .contact .contact-container .contact-form form .contact-mail .contact-mail-label-wrapper span {
+  font-size: 14px;
+  line-height: 1.9;
   color: white;
   background-color: #0C449B;
   padding: 8px 16px;
@@ -121,6 +125,8 @@
 }
 
 .contact .contact-container .contact-form form .contact-contents .contact-contents-label-wrapper span {
+  font-size: 14px;
+  line-height: 1.9;
   color: white;
   background-color: #0C449B;
   padding: 8px 16px;
@@ -150,6 +156,7 @@
   font-size: 16px;
   font-weight: bold;
   line-height: 1.8;
+  color: #333333;
 }
 
 .contact .contact-container .contact-form form .contact-submit {

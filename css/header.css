@@ -42,6 +42,10 @@ header .header-container .header-left a img {
 
 header .header-container .header-left a p {
   margin-left: 16px;
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #333333;
 }
 
 header .header-container .header-center .header-nav {
@@ -64,6 +68,9 @@ header .header-container .header-center .header-nav .header-feature {
 header .header-container .header-center .header-nav .header-feature a {
   text-decoration: none;
   color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
 header .header-container .header-center .header-nav .header-price {
@@ -73,6 +80,9 @@ header .header-container .header-center .header-nav .header-price {
 header .header-container .header-center .header-nav .header-price a {
   text-decoration: none;
   color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
 header .header-container .header-center .header-nav .header-contact {
@@ -82,6 +92,9 @@ header .header-container .header-center .header-nav .header-contact {
 header .header-container .header-center .header-nav .header-contact a {
   text-decoration: none;
   color: #333;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.2;
 }
 
 header .header-container .header-right {
@@ -100,7 +113,7 @@ header .header-container .header-right .contact-btn a {
   font-size: 14px;
   font-weight: bold;
   line-height: 1.2;
-  color: white;
+  color: #FFFFFF;
   text-decoration: none;
   display: block;
   width: 155px;

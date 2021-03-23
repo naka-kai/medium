@@ -3,22 +3,18 @@
 /* blog */
 
 .blog {
-
   height: 668px;
   background-color: #EEFBFB;
 
   .blog-container {
-
     width: 90%;
     margin: 0 auto;
 
     .blog-title {
-
       text-align: center;
       padding: 64px 0 55px;
 
       .blog-titletext {
-
         color: #333333;
         font-size: 32px;
         font-weight: bold;
@@ -27,7 +23,6 @@
       }
 
       .blog-subtext {
-
         color: #3BA6C9;
         font-size: 16px;
         font-weight: bold;
@@ -38,33 +33,27 @@
     .blog-article-wrapper {
 
       .blog-article-box {
-
         display: flex;
         justify-content: space-between;
 
         .blog-article-item {
-
           list-style: none;
           width: 389px;
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 
           a {
-
             text-decoration: none;
 
             .blog-article-img {
-
               height: 260px;
             }
 
             .blog-article-text-box {
-
               position: relative;
               height: 127px;
               background-color: white;
 
               .blog-article-text {
-
                 color: #333333;
                 font-size: 18px;
                 font-weight: bold;
@@ -73,7 +62,6 @@
               }
 
               .blog-article-date {
-
                 position: absolute;
                 right: 39px;
                 bottom: 12px;
