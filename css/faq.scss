@@ -4,7 +4,7 @@
 
 .faq {
 
-  height: 620px;
+  height: 500px;
 
   .faq-container {
 
@@ -39,6 +39,7 @@
 
         &:last-child {
           border-bottom: 1px solid #E5E5E5;
+
         }
 
         dt {
@@ -48,6 +49,10 @@
           border-bottom: none;
           text-align: center;
           cursor: pointer;
+          color: #333333;
+          font-size: 14px;
+          font-weight: bold;
+          line-height: 1.9;
 
         }
 
@@ -64,6 +69,10 @@
           p {
             display: inline-block;
             text-align: left;
+            color: #444444;
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 1.9;
           }
         }
       }

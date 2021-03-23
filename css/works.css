@@ -1,0 +1,75 @@
+/* work */
+.works .blog-title {
+  text-align: center;
+  padding: 64px 0 69px;
+}
+
+.works .blog-title .blog-titletext {
+  font-size: 32px;
+  font-weight: bold;
+  line-height: 0.9;
+  color: #333333;
+  margin-bottom: 23px;
+}
+
+.works .blog-title .blog-subtext {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.6;
+  color: #3BA6C9;
+}
+
+.works .swiper-container {
+  padding-left: 200px;
+  margin-bottom: 90px;
+}
+
+.works .swiper-container .swiper-wrapper .swiper-slide {
+  width: 322px;
+  border: 1px solid #DDDDDD;
+  height: 407px;
+  border-radius: 8px;
+}
+
+.works .swiper-container .swiper-wrapper .swiper-slide a {
+  text-decoration: none;
+}
+
+.works .swiper-container .swiper-wrapper .swiper-slide a .works-work-img {
+  width: 100%;
+}
+
+.works .swiper-container .swiper-wrapper .swiper-slide a .works-work-text-box {
+  height: 195px;
+  padding: 25px 20px 0 20px;
+}
+
+.works .swiper-container .swiper-wrapper .swiper-slide a .works-work-text-box .works-work-text {
+  margin-bottom: 35px;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #333333;
+}
+
+.works .swiper-container .swiper-wrapper .swiper-slide a .works-work-text-box .technique {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #333333;
+}
+
+.works .swiper-container .swiper-wrapper .swiper-slide a .works-work-text-box .period {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #333333;
+}
+
+.works .swiper-container .swiper-wrapper .swiper-slide a .works-work-text-box .coder {
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #333333;
+}
+/*# sourceMappingURL=works.css.map */

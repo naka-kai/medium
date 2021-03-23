@@ -1,6 +1,6 @@
 /* faq */
 .faq {
-  height: 620px;
+  height: 500px;
 }
 
 .faq .faq-container {
@@ -37,6 +37,10 @@
   border-bottom: none;
   text-align: center;
   cursor: pointer;
+  color: #333333;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.9;
 }
 
 .faq .faq-container .faq-list .faq-item dd {
@@ -52,5 +56,9 @@
 .faq .faq-container .faq-list .faq-item dd p {
   display: inline-block;
   text-align: left;
+  color: #444444;
+  font-size: 14px;
+  font-weight: bold;
+  line-height: 1.9;
 }
 /*# sourceMappingURL=faq.css.map */
