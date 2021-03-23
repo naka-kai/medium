@@ -1,2 +1,39 @@
 /* footer */
+footer {
+  background-color: #F8F8F8;
+  text-align: center;
+  padding: 50px;
+}
+
+footer h1 {
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 1.2;
+  color: #333333;
+  margin-bottom: 30px;
+}
+
+footer .footer-span-wrapper {
+  margin-bottom: 57px;
+}
+
+footer .footer-span-wrapper .privacy-policy {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.8;
+  color: #333333;
+}
+
+footer .footer-span-wrapper .private-commerce {
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.8;
+  color: #333333;
+}
+
+footer small {
+  font-size: 14px;
+  line-height: 1.2;
+  color: #333333;
+}
 /*# sourceMappingURL=footer.css.map */

@@ -59,7 +59,7 @@
 
 .threeFeature .threeFeature-container .speedCoding .speedCoding-inner .speedCoding-description .speedCoding-description-text {
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 1.6;
 }
 
@@ -92,7 +92,7 @@
 
 .threeFeature .threeFeature-container .highQuality .highQuality-inner .highQuality-description .highQuality-description-text {
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 1.6;
 }
 
@@ -127,7 +127,7 @@
 
 .threeFeature .threeFeature-container .speedResponse .speedResponse-inner .speedResponse-description .speedResponse-description-text {
   font-size: 16px;
-  font-weight: bold;
+  font-weight: 400;
   line-height: 1.8;
 }
 /*# sourceMappingURL=threeFeature.css.map */

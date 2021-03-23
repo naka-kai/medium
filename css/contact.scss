@@ -5,7 +5,7 @@
 .contact {
 
   background: linear-gradient(to right, #05A5FA, #63FBD7);
-  height: 900px;
+  height: 1027px;
 
   .contact-container {
 
@@ -15,6 +15,8 @@
 
     .contact-title {
 
+      padding: 72px 0 46px;
+
       text-align: center;
 
       .contact-titletext {
@@ -22,6 +24,7 @@
         font-weight: bold;
         line-height: 0.9;
         color: #FFFFFF;
+        margin-bottom: 21px;
       }
 
       .contact-subtext {
@@ -36,9 +39,9 @@
 
       text-align: center;
       font-size: 16px;
-      font-weight: bold;
-      line-height: 1.2;
+      line-height: 1.5;
       color: #FFFFFF;
+      padding-bottom: 45px;
     }
 
     .contact-form {

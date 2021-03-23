@@ -4,22 +4,41 @@
 
 footer {
 
+  background-color: #F8F8F8;
+  text-align: center;
+  padding: 50px;
+
   h1 {
-
-
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 1.2;
+    color: #333333;
+    margin-bottom: 30px;
   }
 
-  .privacy-policy {
+  .footer-span-wrapper {
 
+    margin-bottom: 57px;
 
-  }
+    .privacy-policy {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.8;
+      color: #333333;
+    }
 
-  .private-commerce {
-
-    
+    .private-commerce {
+      font-size: 16px;
+      font-weight: bold;
+      line-height: 1.8;
+      color: #333333;
+    }
   }
 
   small {
+    font-size: 14px;
+    line-height: 1.2;
+    color: #333333;
 
   }
 }

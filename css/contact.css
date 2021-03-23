@@ -2,7 +2,7 @@
 .contact {
   background: -webkit-gradient(linear, left top, right top, from(#05A5FA), to(#63FBD7));
   background: linear-gradient(to right, #05A5FA, #63FBD7);
-  height: 900px;
+  height: 1027px;
 }
 
 .contact .contact-container {
@@ -11,6 +11,7 @@
 }
 
 .contact .contact-container .contact-title {
+  padding: 72px 0 46px;
   text-align: center;
 }
 
@@ -19,6 +20,7 @@
   font-weight: bold;
   line-height: 0.9;
   color: #FFFFFF;
+  margin-bottom: 21px;
 }
 
 .contact .contact-container .contact-title .contact-subtext {
@@ -31,9 +33,9 @@
 .contact .contact-container .contact-comment {
   text-align: center;
   font-size: 16px;
-  font-weight: bold;
-  line-height: 1.2;
+  line-height: 1.5;
   color: #FFFFFF;
+  padding-bottom: 45px;
 }
 
 .contact .contact-container .contact-form {
