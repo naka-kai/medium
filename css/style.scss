@@ -1,5 +1,44 @@
 @charset "utf-8";
 
+/* メディアクエリ */
+
+$mpc: 1200px; //中位のPC
+$spc:1065px; //小さいPC
+$sspc: 1000px; //もっと小さいPC
+$bsp: 800px; //大きいスマホ
+$sp: 768px; // スマホ
+
+@mixin mpc {
+  @media (max-width: ($mpc)) {
+    @content;
+  }
+}
+
+@mixin spc {
+  @media (max-width: ($spc)) {
+    @content;
+  }
+}
+
+@mixin sspc {
+  @media (max-width: ($sspc)) {
+    @content;
+  }
+}
+
+@mixin bsp {
+  @media (max-width: ($bsp)) {
+    @content;
+  }
+}
+
+@mixin sp {
+  @media (max-width: ($sp)) {
+    @content;
+  }
+}
+
+
 /* 全体構造 */
 
 html {

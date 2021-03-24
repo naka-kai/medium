@@ -11,7 +11,11 @@
   display: -ms-flexbox;
   display: flex;
   position: relative;
-  z-index: 1;
+  z-index: 2;
+}
+
+.mainvisual .mainvisual-container .mainvisual-left {
+  width: 50%;
 }
 
 .mainvisual .mainvisual-container .mainvisual-left h1 {
@@ -62,8 +66,8 @@
 }
 
 .mainvisual .mainvisual-container .mainvisual-right .main {
-  width: 518px;
-  height: 430px;
+  width: 50%;
+  height: auto;
   position: absolute;
   top: 131px;
   right: 0;

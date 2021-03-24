@@ -1,5 +1,6 @@
 /* header */
 
+
 header {
 
   .header-container {
@@ -14,7 +15,7 @@ header {
     justify-content: space-between;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
     position: fixed;
-    z-index: 2;
+    z-index: 3;
     background-color: white;
 
     .header-left {
@@ -45,7 +46,7 @@ header {
 
     .header-center {
 
-      .header-nav {
+      .header-pc-nav {
         display: flex;
         justify-content: space-between;
         width: 252px;
@@ -53,7 +54,7 @@ header {
         font-size: 16px;
         line-height: 1.2;
 
-        .header-feature {
+        .header-pc-feature {
           list-style: none;
 
           a {
@@ -65,7 +66,7 @@ header {
           }
         }
 
-        .header-price {
+        .header-pc-price {
 
           list-style: none;
 
@@ -78,7 +79,7 @@ header {
           }
         }
 
-        .header-contact {
+        .header-pc-contact {
           list-style: none;
 
           a {
@@ -89,6 +90,11 @@ header {
             line-height: 1.2;
           }
         }
+      }
+
+      .header-sp-nav {
+
+        display: none;
       }
     }
 

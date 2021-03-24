@@ -17,7 +17,7 @@ header .header-container {
   -webkit-box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
   position: fixed;
-  z-index: 2;
+  z-index: 3;
   background-color: white;
 }
 
@@ -48,7 +48,7 @@ header .header-container .header-left a p {
   color: #333333;
 }
 
-header .header-container .header-center .header-nav {
+header .header-container .header-center .header-pc-nav {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -61,11 +61,11 @@ header .header-container .header-center .header-nav {
   line-height: 1.2;
 }
 
-header .header-container .header-center .header-nav .header-feature {
+header .header-container .header-center .header-pc-nav .header-pc-feature {
   list-style: none;
 }
 
-header .header-container .header-center .header-nav .header-feature a {
+header .header-container .header-center .header-pc-nav .header-pc-feature a {
   text-decoration: none;
   color: #333;
   font-size: 16px;
@@ -73,11 +73,11 @@ header .header-container .header-center .header-nav .header-feature a {
   line-height: 1.2;
 }
 
-header .header-container .header-center .header-nav .header-price {
+header .header-container .header-center .header-pc-nav .header-pc-price {
   list-style: none;
 }
 
-header .header-container .header-center .header-nav .header-price a {
+header .header-container .header-center .header-pc-nav .header-pc-price a {
   text-decoration: none;
   color: #333;
   font-size: 16px;
@@ -85,16 +85,20 @@ header .header-container .header-center .header-nav .header-price a {
   line-height: 1.2;
 }
 
-header .header-container .header-center .header-nav .header-contact {
+header .header-container .header-center .header-pc-nav .header-pc-contact {
   list-style: none;
 }
 
-header .header-container .header-center .header-nav .header-contact a {
+header .header-container .header-center .header-pc-nav .header-pc-contact a {
   text-decoration: none;
   color: #333;
   font-size: 16px;
   font-weight: bold;
   line-height: 1.2;
+}
+
+header .header-container .header-center .header-sp-nav {
+  display: none;
 }
 
 header .header-container .header-right {

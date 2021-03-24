@@ -11,9 +11,12 @@
     margin: 0 auto;
     display: flex;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 
     .mainvisual-left {
+
+      width: 50%;
+
       h1 {
         margin: 168px 0 29px;
         font-size: 32px;
@@ -57,11 +60,11 @@
     .mainvisual-right {
 
       .main {
-        width: 518px;
-        height: 430px;
+        width: 50%;
+        height: auto;
         position: absolute;
         top: 131px;
-        right: 0;
+        right: 0;;
       }
     }
   }
