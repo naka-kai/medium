@@ -1,3 +1,18 @@
+@charset "UTF-8";
+/* メディアクエリ */
+/* 全体構造 */
+html {
+  overflow: auto;
+  scroll-padding-top: 97px;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
 /* header */
 header .header-container {
   padding-left: 12.5%;
@@ -46,6 +61,12 @@ header .header-container .header-left a p {
   font-weight: bold;
   line-height: 1.2;
   color: #333333;
+}
+
+@media (max-width: 1000px) {
+  header .header-container .header-center {
+    display: none;
+  }
 }
 
 header .header-container .header-center .header-pc-nav {
@@ -101,11 +122,17 @@ header .header-container .header-center .header-sp-nav {
   display: none;
 }
 
-header .header-container .header-right {
+header .header-container .header-pc-right {
   margin-right: 21px;
 }
 
-header .header-container .header-right .contact-btn {
+@media (max-width: 1000px) {
+  header .header-container .header-pc-right {
+    display: none;
+  }
+}
+
+header .header-container .header-pc-right .contact-btn {
   width: 155px;
   height: 37px;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
@@ -113,7 +140,7 @@ header .header-container .header-right .contact-btn {
   border-radius: 10px;
 }
 
-header .header-container .header-right .contact-btn a {
+header .header-container .header-pc-right .contact-btn a {
   font-size: 14px;
   font-weight: bold;
   line-height: 1.2;
@@ -134,5 +161,55 @@ header .header-container .header-right .contact-btn a {
       -ms-flex-align: center;
           align-items: center;
   border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  header .header-container #hamburger {
+    position: relative;
+    display: block;
+    width: 30px;
+    height: 25px;
+    margin: 0 0 0 auto;
+  }
+}
+
+@media (max-width: 1000px) {
+  header .header-container #hamburger::before {
+    content: '';
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+  }
+}
+
+@media (max-width: 1000px) {
+  header .header-container #hamburger::after {
+    content: '';
+    display: block;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 70%;
+    height: 2px;
+    background-color: #333;
+  }
+}
+
+@media (max-width: 1000px) {
+  header .header-container #hamburger span {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #333;
+    -webkit-transform: translateY(-50%);
+            transform: translateY(-50%);
+  }
 }
 /*# sourceMappingURL=header.css.map */
