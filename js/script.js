@@ -9,7 +9,7 @@ $(function () {
 
   //FAQ
   $('dd:not(:first)').hide();
-  $('.faq-list dt').click(function() {
+  $('.faq-list dt').click(function () {
     $(this).next('dd').slideToggle()
   });
 
@@ -37,37 +37,17 @@ $(function () {
   });
 });
 
-
-
-
-// // 追従ナビ・スマホでハンバーガーメニューになる
-// (function ($) {
-//   $(function () {
-//     var $header = $('#head_wrap');
-//     // Nav Fixed
-//     $(window).scroll(function () {
-//       if ($(window).scrollTop() > 350) {
-//         $header.addClass('fixed');
-//       } else {
-//         $header.removeClass('fixed');
-//       }
-//     });
-//     // Nav Toggle Button
-//     $('#nav-toggle, #global-nav ul li a').click(function () {
-//       $header.toggleClass('open');
-//     });
-//   });
-// })(jQuery);
-
-// // ゆっくりスクロールする
-// $(function () {
-//   $('a[href^="#"]').click(function () {
-//     var adjust = 0;
-//     var speed = 1200;
-//     var href = $(this).attr("href");
-//     var target = $(href == "#" || href == "" ? 'html' : href);
-//     var position = target.offset().top + adjust;
-//     $('body,html').animate({ scrollTop: position }, speed, 'swing');
-//     return false;
-//   });
-// });
+// ハンバーガーメニュー
+$('#hamburger').on('click', function () {
+  if ($(this).hasClass('active')) {
+    $(this).removeClass('active');
+    $(this).text('MENU');
+    $('.header-sp-nav-wrapper').removeClass('open');
+    $('.header-sp-nav-background').removeClass('open');
+  } else {
+    $(this).addClass('active');
+    $(this).text('CLOSE');
+    $('.header-sp-nav-wrapper').addClass('open');
+    $('.header-sp-nav-background').addClass('open');
+  }
+});

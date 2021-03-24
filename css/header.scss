@@ -18,7 +18,7 @@ header {
     justify-content: space-between;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
     position: fixed;
-    z-index: 3;
+    z-index: 10;
     background-color: white;
 
     .header-left {
@@ -97,11 +97,6 @@ header {
             line-height: 1.2;
           }
         }
-      }
-
-      .header-sp-nav {
-
-        display: none;
       }
     }
 
@@ -186,5 +181,45 @@ header {
         }
       }
     }
+
   }
+}
+
+.header-sp-nav-wrapper {
+  // display: none;
+
+  @include sspc {
+    display: block;
+    width: 100%;
+    max-width: 250px;
+    height: 100%;
+    background-color: aqua;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 10;
+    transform: translateX(250px);
+    transition: all .5s;
+  }
+
+  .open {
+    transform: translateX(0);
+  }
+
+  .header-sp-nav {
+
+    @include sspc {}
+
+    li {
+      @include sspc {}
+
+      a {
+        @include sspc {}
+      }
+    }
+  }
+}
+
+.header-sp-nav-background {
+  @include sspc {}
 }
