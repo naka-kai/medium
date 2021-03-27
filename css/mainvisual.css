@@ -1,3 +1,18 @@
+@charset "UTF-8";
+/* メディアクエリ */
+/* 全体構造 */
+html {
+  overflow: auto;
+  scroll-padding-top: 97px;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
 /* mainvisual */
 .mainvisual {
   padding-top: 94px;
@@ -16,6 +31,7 @@
 
 .mainvisual .mainvisual-container .mainvisual-left {
   width: 50%;
+  z-index: 3;
 }
 
 .mainvisual .mainvisual-container .mainvisual-left h1 {
@@ -66,11 +82,18 @@
 }
 
 .mainvisual .mainvisual-container .mainvisual-right .main {
-  width: 50%;
   height: auto;
   position: absolute;
   top: 131px;
   right: 0;
+  width: 50%;
+}
+
+@media (max-width: 1200px) {
+  .mainvisual .mainvisual-container .mainvisual-right .main {
+    width: 40%;
+    margin-left: 30px;
+  }
 }
 
 .circle {

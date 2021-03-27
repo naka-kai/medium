@@ -1,8 +1,8 @@
-@import 'style.scss';
-
+@charset "utf-8";
 
 /* header */
 
+@import 'style.scss';
 
 header {
 
@@ -18,7 +18,7 @@ header {
     justify-content: space-between;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
     position: fixed;
-    z-index: 10;
+    z-index: 3;
     background-color: white;
 
     .header-left {
@@ -49,17 +49,22 @@ header {
 
     .header-center {
 
-      @include sspc {
-        display: none;
-      }
-
       .header-pc-nav {
-        display: flex;
-        justify-content: space-between;
-        width: 252px;
-        font-weight: bold;
-        font-size: 16px;
-        line-height: 1.2;
+
+        @include sspc {
+
+          display: none;
+        }
+
+        ul {
+
+          display: flex;
+          justify-content: space-between;
+          width: 252px;
+          font-weight: bold;
+          font-size: 16px;
+          line-height: 1.2;
+        }
 
         .header-pc-feature {
           list-style: none;
@@ -100,10 +105,11 @@ header {
       }
     }
 
-    .header-pc-right {
+    .header-right {
       margin-right: 21px;
 
       @include sspc {
+
         display: none;
       }
 
@@ -131,95 +137,112 @@ header {
       }
     }
 
-    #hamburger {
-      @include sspc {
-
-        position: relative;
-        display: block;
-        width: 30px;
-        height: 25px;
-        margin: 0 0 0 auto;
-      }
-
-      &::before {
-        @include sspc {
-          content: '';
-          display: block;
-          position: absolute;
-          top: 0;
-          left: 0;
-          width: 100%;
-          height: 2px;
-          background-color: #333;
-        }
-      }
-
-      &::after {
-        @include sspc {
-          content: '';
-          display: block;
-          position: absolute;
-          bottom: 0;
-          left: 0;
-          width: 70%;
-          height: 2px;
-          background-color: #333;
-        }
-      }
-
-      span {
-        @include sspc {
-
-          position: absolute;
-          top: 50%;
-          left: 0;
-          display: block;
-          width: 100%;
-          height: 2px;
-          background-color: #333;
-          transform: translateY(-50%);
-        }
-      }
-    }
-
   }
 }
 
-.header-sp-nav-wrapper {
-  // display: none;
+.header-sp-nav {
+
+  display: none;
+
+  @include sspc {
+
+    width: 40%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(0, 0, 0, 0.16);
+    transition: 0.3s;
+    position: fixed;
+    z-index: 20;
+    top: 94px;
+    right: -40%;
+
+    .menu-list {
+
+      list-style: none;
+      width: 70%;
+      height: 10%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border: 1px solid#333333;
+      margin: 40px 20px 20px 50px;
+
+      background-color: rgba(256, 256, 256, 0.9);
+      position: relative;
+
+      a {
+        color: #333333;
+        text-decoration: none;
+        font-weight: bold;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #1be6f5;
+        display: block;
+      }
+    }
+  }
+}
+
+.header-sp-nav.open {
+  right: 0;
+}
+
+.ham {
+
+  display: none;
 
   @include sspc {
     display: block;
-    width: 100%;
-    max-width: 250px;
-    height: 100%;
-    background-color: aqua;
+    position: relative;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    position: absolute;
+    right: 40px;
+    top: 25px;
     position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 10;
-    transform: translateX(250px);
-    transition: all .5s;
-  }
+    z-index: 20;
 
-  .open {
-    transform: translateX(0);
-  }
+    &-list {
+      position: absolute;
+      width: 40px;
+      height: 4px;
+      background-color: #333;
+      display: inline-block;
+      text-align: center;
+    }
 
-  .header-sp-nav {
+    &-list1 {
+      right: 0;
+      top: 5px;
+      width: 100%;
+    }
 
-    @include sspc {}
+    &-list1.open {
+      transform: rotate(45deg);
+      top: 40%;
+    }
 
-    li {
-      @include sspc {}
+    &-list2 {
+      right: 0;
+      top: 18px;
+      width: 85%;
+    }
 
-      a {
-        @include sspc {}
-      }
+    &-list2.open {
+      opacity: 0;
+    }
+
+    &-list3 {
+      right: 0;
+      top: 31px;
+      width: 70%;
+    }
+
+    &-list3.open {
+      transform: rotate(-45deg);
+      top: 40%;
+      width: 100%;
     }
   }
-}
-
-.header-sp-nav-background {
-  @include sspc {}
 }

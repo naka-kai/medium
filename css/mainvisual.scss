@@ -1,5 +1,7 @@
 @charset "utf-8";
 
+@import 'style.scss';
+
 /* mainvisual */
 
 .mainvisual {
@@ -14,8 +16,8 @@
     z-index: 2;
 
     .mainvisual-left {
-
       width: 50%;
+      z-index: 3;
 
       h1 {
         margin: 168px 0 29px;
@@ -60,11 +62,16 @@
     .mainvisual-right {
 
       .main {
-        width: 50%;
         height: auto;
         position: absolute;
         top: 131px;
-        right: 0;;
+        right: 0;
+        width: 50%;
+
+        @include mpc {
+          width: 40%;
+          margin-left: 30px;
+        }
       }
     }
   }

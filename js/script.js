@@ -1,12 +1,6 @@
 
 $(function () {
 
-  //ハンバーガーメニュー
-  $('.btn-gNav').on("click", function () {
-    $(this).toggleClass('open');
-    $('#gNav').toggleClass('open');
-  });
-
   //FAQ
   $('dd:not(:first)').hide();
   $('.faq-list dt').click(function () {
@@ -35,19 +29,12 @@ $(function () {
     $("html, body").animate({ scrollTop: position }, speed, "swing");
     return false;
   });
-});
 
-// ハンバーガーメニュー
-$('#hamburger').on('click', function () {
-  if ($(this).hasClass('active')) {
-    $(this).removeClass('active');
-    $(this).text('MENU');
-    $('.header-sp-nav-wrapper').removeClass('open');
-    $('.header-sp-nav-background').removeClass('open');
-  } else {
-    $(this).addClass('active');
-    $(this).text('CLOSE');
-    $('.header-sp-nav-wrapper').addClass('open');
-    $('.header-sp-nav-background').addClass('open');
-  }
+  // ハンバーガーメニュー
+  $('.ham').on('click', function() {
+    $('.header-sp-nav, .ham, .ham-list1, .ham-list2, .ham-list3').toggleClass('open');
+  })
+
+
+
 });
