@@ -2,13 +2,15 @@
 
 /* contact */
 
+@import 'style.scss';
+
 .contact {
   background: linear-gradient(to right, #05A5FA, #63FBD7);
   height: 1027px;
 
   .contact-container {
     margin: 0 auto;
-    width: 75%;
+    max-width: 75%;
 
     .contact-title {
       padding: 72px 0 46px;
@@ -42,7 +44,6 @@
       margin: 0 auto;
       background-color: white;
       padding: 31px 62px 35px;
-      width: 90%;
 
       form {
         .contact-name {
@@ -50,6 +51,10 @@
 
           .contact-name-label-wrapper {
             padding-bottom: 36px;
+
+            @include bsp {
+              padding-bottom: 20px;
+            }
 
             label {
               font-size: 16px;
@@ -74,6 +79,10 @@
             height: 43px;
             background-color: #EEFBFB;
             border: none;
+
+            @include bsp {
+              width: 80%;
+            }
           }
         }
 
@@ -83,6 +92,10 @@
           .contact-mail-label-wrapper {
             padding: 25px 0 35px;
 
+            @include bsp {
+              padding: 25px 0 20px;
+            }
+
             label {
               font-size: 16px;
               font-weight: bold;
@@ -106,6 +119,10 @@
             height: 43px;
             background-color: #EEFBFB;
             border: none;
+
+            @include bsp {
+              width: 80%;
+            }
           }
         }
 
@@ -114,6 +131,10 @@
 
           .contact-contents-label-wrapper {
             padding: 25px 0 35px;
+
+            @include bsp {
+              padding: 25px 0 20px;
+            }
 
             label {
               font-size: 16px;
@@ -146,9 +167,18 @@
           text-align: center;
           padding: 32px 0;
 
+          @include ipad {
+            padding: 20px 0;
+          }
+
           input {
             width: 20px;
             height: 20px;
+
+            @include ipad {
+              width: 17px;
+              height: 17px;
+            }
           }
 
           label {
@@ -156,6 +186,10 @@
             font-weight: bold;
             line-height: 1.8;
             color: #333333;
+
+            @include ipad {
+              font-size: 14px;
+            }
           }
         }
 

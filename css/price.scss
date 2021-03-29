@@ -2,13 +2,23 @@
 
 /* price */
 
+@import 'style.scss';
+
 .price {
   height: 744px;
   background-color: #EEFBFB;
 
+  @include sspc {
+    height: 600px;
+  }
+
   .price-container {
     width: 75%;
     margin: 0 auto;
+
+    @include sspc {
+      width: 90%;
+    }
 
     .price-title {
       text-align: center;
@@ -35,8 +45,12 @@
       box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
       background-color: white;
 
-      tr {
+      @include sspc {
+        width: 90%;
+        margin-top: 50px;
+      }
 
+      tr {
         th {
           padding: 40px 34px 37px 19px;
           border: solid 1px #E5E5E5;
@@ -44,6 +58,10 @@
           font-weight: bold;
           line-height: 1.8;
           color: #333333;
+
+          @include sspc {
+            padding: 20px 34px 20px 19px;
+          }
         }
 
         td {
@@ -53,6 +71,18 @@
           font-weight: bold;
           line-height: 1.8;
           color: #333333;
+
+          @media screen and (max-width: 1243px) {
+            padding-right: 350px;
+          }
+
+          @media screen and (max-width: 1013px) {
+            padding-right: 300px;
+          }
+
+          @include sspc {
+            padding: 20px 200px 20px 31px;
+          }
         }
       }
     }

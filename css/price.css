@@ -1,12 +1,39 @@
+@charset "UTF-8";
 /* price */
+/* メディアクエリ */
+/* 全体構造 */
+html {
+  overflow: auto;
+  scroll-padding-top: 97px;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
 .price {
   height: 744px;
   background-color: #EEFBFB;
 }
 
+@media (max-width: 1000px) {
+  .price {
+    height: 600px;
+  }
+}
+
 .price .price-container {
   width: 75%;
   margin: 0 auto;
+}
+
+@media (max-width: 1000px) {
+  .price .price-container {
+    width: 90%;
+  }
 }
 
 .price .price-container .price-title {
@@ -36,6 +63,13 @@
   background-color: white;
 }
 
+@media (max-width: 1000px) {
+  .price .price-container .price-table {
+    width: 90%;
+    margin-top: 50px;
+  }
+}
+
 .price .price-container .price-table tr th {
   padding: 40px 34px 37px 19px;
   border: solid 1px #E5E5E5;
@@ -45,6 +79,12 @@
   color: #333333;
 }
 
+@media (max-width: 1000px) {
+  .price .price-container .price-table tr th {
+    padding: 20px 34px 20px 19px;
+  }
+}
+
 .price .price-container .price-table tr td {
   padding: 40px 526px 37px 31px;
   border: solid 1px #E5E5E5;
@@ -52,6 +92,24 @@
   font-weight: bold;
   line-height: 1.8;
   color: #333333;
+}
+
+@media screen and (max-width: 1243px) {
+  .price .price-container .price-table tr td {
+    padding-right: 350px;
+  }
+}
+
+@media screen and (max-width: 1013px) {
+  .price .price-container .price-table tr td {
+    padding-right: 300px;
+  }
+}
+
+@media (max-width: 1000px) {
+  .price .price-container .price-table tr td {
+    padding: 20px 200px 20px 31px;
+  }
 }
 
 .price .price-container .price-caution {

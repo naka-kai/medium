@@ -2,9 +2,15 @@
 
 /* blog */
 
+@import 'style.scss';
+
 .blog {
   height: 668px;
   background-color: #EEFBFB;
+
+  @media screen and (max-width: 1355px) {
+    height: 1500px;
+  }
 
   .blog-container {
     width: 90%;
@@ -36,10 +42,18 @@
         display: flex;
         justify-content: space-between;
 
+        @media screen and (max-width: 1355px) {
+          display: block;
+        }
+
         .blog-article-item {
           list-style: none;
           width: 389px;
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+
+          @media screen and (max-width: 1355px) {
+            margin: 0 auto 20px;
+          }
 
           a {
             text-decoration: none;

@@ -2,10 +2,16 @@
 
 /* footer */
 
+@import 'style.scss';
+
 footer {
   background-color: #F8F8F8;
   text-align: center;
   padding: 50px;
+
+  @include sspc {
+    padding: 20px;
+  }
 
   h1 {
     font-size: 24px;
@@ -13,10 +19,18 @@ footer {
     line-height: 1.2;
     color: #333333;
     margin-bottom: 30px;
+
+    @include sspc {
+      margin-bottom: 15px;
+    }
   }
 
   .footer-span-wrapper {
     margin-bottom: 57px;
+
+    @include sspc {
+      margin-bottom: 20px;
+    }
 
     .privacy-policy {
       font-size: 16px;

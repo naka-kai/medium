@@ -14,7 +14,29 @@ $(function () {
       delay: 5000,
       disableOnInteraction: false
     },
-    slidesPerView: 3.5,
+    breakpoints: {
+
+      // 320px以上の場合
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 20,
+      },
+      // 768px以上の場合
+      768: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      // 980px以上の場合
+      1000: {
+        slidesPerView: 2,
+        spaceBetween: 20,
+      },
+      // 1200px以上の場合
+      1200: {
+        slidesPerView: 3.5,
+        spaceBetween: 40,
+      },
+    },
     spaceBetween: 40,
     initialSlide: 1,
   });
@@ -31,7 +53,7 @@ $(function () {
   });
 
   // ハンバーガーメニュー
-  $('.ham').on('click', function() {
+  $('.ham').on('click', function () {
     $('.header-sp-nav, .ham, .ham-list1, .ham-list2, .ham-list3').toggleClass('open');
   })
 

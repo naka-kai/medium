@@ -1,4 +1,19 @@
+@charset "UTF-8";
 /* faq */
+/* メディアクエリ */
+/* 全体構造 */
+html {
+  overflow: auto;
+  scroll-padding-top: 97px;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
 .faq {
   height: 500px;
 }

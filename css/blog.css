@@ -1,7 +1,28 @@
+@charset "UTF-8";
 /* blog */
+/* メディアクエリ */
+/* 全体構造 */
+html {
+  overflow: auto;
+  scroll-padding-top: 97px;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
 .blog {
   height: 668px;
   background-color: #EEFBFB;
+}
+
+@media screen and (max-width: 1355px) {
+  .blog {
+    height: 1500px;
+  }
 }
 
 .blog .blog-container {
@@ -38,11 +59,23 @@
           justify-content: space-between;
 }
 
+@media screen and (max-width: 1355px) {
+  .blog .blog-container .blog-article-wrapper .blog-article-box {
+    display: block;
+  }
+}
+
 .blog .blog-container .blog-article-wrapper .blog-article-box .blog-article-item {
   list-style: none;
   width: 389px;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
+}
+
+@media screen and (max-width: 1355px) {
+  .blog .blog-container .blog-article-wrapper .blog-article-box .blog-article-item {
+    margin: 0 auto 20px;
+  }
 }
 
 .blog .blog-container .blog-article-wrapper .blog-article-box .blog-article-item a {

@@ -1,8 +1,29 @@
+@charset "UTF-8";
 /* footer */
+/* メディアクエリ */
+/* 全体構造 */
+html {
+  overflow: auto;
+  scroll-padding-top: 97px;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
 footer {
   background-color: #F8F8F8;
   text-align: center;
   padding: 50px;
+}
+
+@media (max-width: 1000px) {
+  footer {
+    padding: 20px;
+  }
 }
 
 footer h1 {
@@ -13,8 +34,20 @@ footer h1 {
   margin-bottom: 30px;
 }
 
+@media (max-width: 1000px) {
+  footer h1 {
+    margin-bottom: 15px;
+  }
+}
+
 footer .footer-span-wrapper {
   margin-bottom: 57px;
+}
+
+@media (max-width: 1000px) {
+  footer .footer-span-wrapper {
+    margin-bottom: 20px;
+  }
 }
 
 footer .footer-span-wrapper .privacy-policy {

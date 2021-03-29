@@ -21,6 +21,12 @@ header {
     z-index: 3;
     background-color: white;
 
+    @include sp {
+      padding-left: 3%;
+      width: 100%;
+      height: 70px;
+    }
+
     .header-left {
 
       a {
@@ -32,9 +38,18 @@ header {
         line-height: 1.2;
         font-weight: bold;
 
+        @include sp {
+          font-size: 16px;
+        }
+
         img {
           width: 47px;
           height: 47px;
+
+          @include sp {
+            width: 35px;
+            height: 35px;
+          }
         }
 
         p {
@@ -109,7 +124,6 @@ header {
       margin-right: 21px;
 
       @include sspc {
-
         display: none;
       }
 
@@ -136,7 +150,6 @@ header {
         }
       }
     }
-
   }
 }
 
@@ -175,9 +188,16 @@ header {
         color: #333333;
         text-decoration: none;
         font-weight: bold;
-        padding-bottom: 5px;
-        border-bottom: 2px solid #1be6f5;
-        display: block;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+        width: 100%;
+
+        span {
+          padding-bottom: 5px;
+          border-bottom: 2px solid #1be6f5;
+        }
       }
     }
   }
@@ -202,6 +222,13 @@ header {
     top: 25px;
     position: fixed;
     z-index: 20;
+
+    @include sp {
+      width: 30px;
+      height: 30px;
+      right: 30px;
+      top: 15px;
+    }
 
     &-list {
       position: absolute;

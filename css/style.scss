@@ -6,7 +6,8 @@ $mpc: 1200px; //中位のPC
 $spc:1065px; //小さいPC
 $sspc: 1000px; //もっと小さいPC
 $bsp: 800px; //大きいスマホ
-$sp: 768px; // スマホ
+$ipad: 768px; // iPad
+$sp: 375px; // スマホ
 
 @mixin mpc {
   @media (max-width: ($mpc)) {
@@ -28,6 +29,12 @@ $sp: 768px; // スマホ
 
 @mixin bsp {
   @media (max-width: ($bsp)) {
+    @content;
+  }
+}
+
+@mixin ipad {
+  @media (max-width: ($ipad)) {
     @content;
   }
 }

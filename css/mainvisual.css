@@ -1,4 +1,5 @@
 @charset "UTF-8";
+/* mainvisual */
 /* メディアクエリ */
 /* 全体構造 */
 html {
@@ -13,10 +14,19 @@ body {
   overflow: hidden;
 }
 
-/* mainvisual */
 .mainvisual {
-  padding-top: 94px;
-  height: 674px;
+  padding-top: 162px;
+  height: 600px;
+  background-image: url(../img/circle.png);
+  background-size: 800px 800px;
+  background-repeat: no-repeat;
+  background-position: top -150px right -100px;
+}
+
+@media (max-width: 1000px) {
+  .mainvisual {
+    padding-top: 94px;
+  }
 }
 
 .mainvisual .mainvisual-container {
@@ -29,23 +39,40 @@ body {
   z-index: 2;
 }
 
+@media (max-width: 1000px) {
+  .mainvisual .mainvisual-container {
+    width: 100%;
+    display: block;
+    position: static;
+  }
+}
+
 .mainvisual .mainvisual-container .mainvisual-left {
-  width: 50%;
+  width: 40%;
   z-index: 3;
 }
 
+@media (max-width: 1000px) {
+  .mainvisual .mainvisual-container .mainvisual-left {
+    width: 100%;
+    text-align: center;
+  }
+}
+
 .mainvisual .mainvisual-container .mainvisual-left h1 {
-  margin: 168px 0 29px;
+  margin-bottom: 29px;
   font-size: 32px;
   font-weight: bold;
-  line-height: 1.2;
+  line-height: 1.5;
   color: #333333;
+  width: 400px;
+  margin: 38px auto;
 }
 
 .mainvisual .mainvisual-container .mainvisual-left p {
   font-size: 16px;
   font-weight: bold;
-  line-height: 1.2;
+  line-height: 1.4;
   color: #333333;
 }
 
@@ -56,6 +83,12 @@ body {
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
   border-radius: 10px;
+}
+
+@media (max-width: 1000px) {
+  .mainvisual .mainvisual-container .mainvisual-left .contact-btn {
+    margin: 30px auto 0;
+  }
 }
 
 .mainvisual .mainvisual-container .mainvisual-left .contact-btn a {
@@ -81,26 +114,23 @@ body {
   border-radius: 10px;
 }
 
-.mainvisual .mainvisual-container .mainvisual-right .main {
+.mainvisual .mainvisual-container .mainvisual-right .mainvisual-right-img {
   height: auto;
   position: absolute;
-  top: 131px;
+  top: -20px;
   right: 0;
-  width: 50%;
+  width: 60%;
 }
 
-@media (max-width: 1200px) {
-  .mainvisual .mainvisual-container .mainvisual-right .main {
-    width: 40%;
-    margin-left: 30px;
+@media (max-width: 1000px) {
+  .mainvisual .mainvisual-container .mainvisual-right .mainvisual-right-img {
+    position: static;
+    width: 30%;
+    height: auto;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 20px auto;
   }
-}
-
-.circle {
-  width: 708px;
-  height: 711px;
-  position: absolute;
-  top: -30px;
-  right: -85px;
 }
 /*# sourceMappingURL=mainvisual.css.map */

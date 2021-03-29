@@ -1,10 +1,25 @@
+@charset "UTF-8";
 /* work */
-.works .blog-title {
+/* メディアクエリ */
+/* 全体構造 */
+html {
+  overflow: auto;
+  scroll-padding-top: 97px;
+}
+
+body {
+  font-family: 'Noto Sans JP', sans-serif;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.works .works-title {
   text-align: center;
   padding: 64px 0 69px;
 }
 
-.works .blog-title .blog-titletext {
+.works .works-title .works-titletext {
   font-size: 32px;
   font-weight: bold;
   line-height: 0.9;
@@ -12,7 +27,7 @@
   margin-bottom: 23px;
 }
 
-.works .blog-title .blog-subtext {
+.works .works-title .works-subtext {
   font-size: 16px;
   font-weight: bold;
   line-height: 1.6;
@@ -24,10 +39,15 @@
   margin-bottom: 90px;
 }
 
+@media (max-width: 1000px) {
+  .works .swiper-container {
+    padding-left: 0;
+  }
+}
+
 .works .swiper-container .swiper-wrapper .swiper-slide {
   width: 322px;
   border: 1px solid #DDDDDD;
-  height: 407px;
   border-radius: 8px;
 }
 
@@ -42,6 +62,12 @@
 .works .swiper-container .swiper-wrapper .swiper-slide a .works-work-text-box {
   height: 195px;
   padding: 25px 20px 0 20px;
+}
+
+@media (max-width: 1200px) {
+  .works .swiper-container .swiper-wrapper .swiper-slide a .works-work-text-box {
+    height: 250px;
+  }
 }
 
 .works .swiper-container .swiper-wrapper .swiper-slide a .works-work-text-box .works-work-text {

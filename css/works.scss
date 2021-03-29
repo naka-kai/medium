@@ -2,13 +2,15 @@
 
 /* work */
 
+@import 'style.scss';
+
 .works {
 
-  .blog-title {
+  .works-title {
     text-align: center;
     padding: 64px 0 69px;
 
-    .blog-titletext {
+    .works-titletext {
       font-size: 32px;
       font-weight: bold;
       line-height: 0.9;
@@ -16,7 +18,7 @@
       margin-bottom: 23px;
     }
 
-    .blog-subtext {
+    .works-subtext {
       font-size: 16px;
       font-weight: bold;
       line-height: 1.6;
@@ -28,12 +30,15 @@
     padding-left: 200px;
     margin-bottom: 90px;
 
+    @include sspc {
+      padding-left: 0;
+    }
+
     .swiper-wrapper {
 
       .swiper-slide {
         width: 322px;
         border: 1px solid #DDDDDD;
-        height: 407px;
         border-radius: 8px;
 
         a {
@@ -46,6 +51,10 @@
           .works-work-text-box {
             height: 195px;
             padding: 25px 20px 0 20px;
+
+            @include mpc {
+              height: 250px;
+            }
 
             .works-work-text {
               margin-bottom: 35px;
