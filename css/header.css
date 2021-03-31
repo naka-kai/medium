@@ -207,9 +207,18 @@ header .header-container .header-right .contact-btn a {
     top: 94px;
     right: -40%;
   }
+}
+
+@media (max-width: 1000px) and (max-width: 375px) {
+  .header-sp-nav {
+    top: 70px;
+  }
+}
+
+@media (max-width: 1000px) {
   .header-sp-nav .menu-list {
     list-style: none;
-    width: 70%;
+    width: 60%;
     height: 10%;
     display: -webkit-box;
     display: -ms-flexbox;
@@ -221,10 +230,25 @@ header .header-container .header-right .contact-btn a {
         -ms-flex-align: center;
             align-items: center;
     border: 1px solid #333333;
-    margin: 40px 20px 20px 50px;
+    margin: 50px auto 20px;
     background-color: rgba(255, 255, 255, 0.9);
     position: relative;
   }
+}
+
+@media (max-width: 1000px) and (max-width: 375px) {
+  .header-sp-nav .menu-list {
+    margin: 40px auto 20px;
+    width: 53%;
+    height: 8%;
+  }
+  .header-sp-nav .menu-list:last-child {
+    width: 70%;
+    height: 10%;
+  }
+}
+
+@media (max-width: 1000px) {
   .header-sp-nav .menu-list a {
     color: #333333;
     text-decoration: none;

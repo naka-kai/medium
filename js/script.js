@@ -21,20 +21,46 @@ $(function () {
 
 
   // お問い合わせへのスムーススクロール
-  var headerHight = 94;
-  $('a[href^="#"]').click(function () {
-    let speed = 500;
-    let href = $(this).attr("href");
-    let target = $(href == "#" || href == "" ? 'html' : href);
-    let position = target.offset().top - headerHight;
-    $("html, body").animate({ scrollTop: position }, speed, "swing");
-    return false;
+
+  jQuery(document).ready(function ($) {
+    //600px以上の場合
+    if (window.matchMedia('(min-width: 768px)').matches) {
+      $(function () {
+        var headerHight = 94;
+        $('a[href^="#"]').click(function () {
+          let speed = 500;
+          let href = $(this).attr("href");
+          let target = $(href == "#" || href == "" ? 'html' : href);
+          let position = target.offset().top - headerHight;
+          $("html, body").animate({ scrollTop: position }, speed, "swing");
+          return false;
+        });
+      });
+      //600px以下の場合
+    } else if (window.matchMedia('(max-width: 768px)').matches) {
+      $(function () {
+        var headerHight = 70;
+        $('a[href^="#"]').click(function () {
+          let speed = 500;
+          let href = $(this).attr("href");
+          let target = $(href == "#" || href == "" ? 'html' : href);
+          let position = target.offset().top - headerHight;
+          $("html, body").animate({ scrollTop: position }, speed, "swing");
+          return false;
+        });;
+      });
+    };
   });
 
   // ハンバーガーメニュー
   $('.ham').on('click', function () {
     $('.header-sp-nav, .ham, .ham-list1, .ham-list2, .ham-list3').toggleClass('open');
   })
+
+  //ハンバーガーメニューのナビリンククリック後自動で閉じる
+  $('.menu-list a').on('click', function () {
+    $('.ham').click();
+  });
 
   //お問い合わせフォームのバリデーション
   //始めにjQueryで送信ボタンを無効化する

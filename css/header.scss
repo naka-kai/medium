@@ -170,19 +170,33 @@ header {
     top: 94px;
     right: -40%;
 
+    @include sp {
+      top: 70px;
+    }
+
     .menu-list {
 
       list-style: none;
-      width: 70%;
+      width: 60%;
       height: 10%;
       display: flex;
       justify-content: center;
       align-items: center;
       border: 1px solid#333333;
-      margin: 40px 20px 20px 50px;
-
+      margin: 50px auto 20px;
       background-color: rgba(256, 256, 256, 0.9);
       position: relative;
+
+      @include sp {
+        margin: 40px auto 20px;
+        width: 53%;
+        height: 8%;
+
+        &:last-child {
+          width: 70%;
+          height: 10%;
+        }
+      }
 
       a {
         color: #333333;
@@ -208,7 +222,6 @@ header {
 }
 
 .ham {
-
   display: none;
 
   @include sspc {

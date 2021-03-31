@@ -20,7 +20,7 @@ a:hover {
 
 .mainvisual {
   padding-top: 162px;
-  height: 600px;
+  height: 800px;
   background-image: url(../img/circle.png);
   background-size: 800px 800px;
   background-repeat: no-repeat;
@@ -36,6 +36,7 @@ a:hover {
 @media (max-width: 375px) {
   .mainvisual {
     padding-top: 70px;
+    height: 580px;
   }
 }
 
@@ -153,7 +154,7 @@ a:hover {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    margin: 20px auto;
+    margin: 20px auto 0;
   }
 }
 /*# sourceMappingURL=mainvisual.css.map */
