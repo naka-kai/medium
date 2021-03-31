@@ -5,12 +5,9 @@
 @import 'style.scss';
 
 .blog {
-  height: 668px;
+  height: auto;
   background-color: #EEFBFB;
-
-  @media screen and (max-width: 1355px) {
-    height: 1500px;
-  }
+  padding-bottom: 50px;
 
   .blog-container {
     width: 90%;
@@ -20,12 +17,21 @@
       text-align: center;
       padding: 64px 0 55px;
 
+      @include sp {
+        padding: 50px 0 30px;
+      }
+
       .blog-titletext {
         color: #333333;
         font-size: 32px;
         font-weight: bold;
         line-height: 0.9;
         margin-bottom: 23px;
+
+        @include sp {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
       }
 
       .blog-subtext {
@@ -33,6 +39,10 @@
         font-size: 16px;
         font-weight: bold;
         line-height: 1.2;
+
+        @include sp {
+          font-size: 14px;
+        }
       }
     }
 
@@ -42,47 +52,75 @@
         display: flex;
         justify-content: space-between;
 
-        @media screen and (max-width: 1355px) {
+        @include ipad {
           display: block;
         }
 
         .blog-article-item {
           list-style: none;
-          width: 389px;
+          width: 31%;
+          margin-right: 30px;
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 
-          @media screen and (max-width: 1355px) {
-            margin: 0 auto 20px;
+          @include ipad {
+            width: auto;
+            margin-bottom: 30px;
+            margin-right: 0;
           }
 
           a {
             text-decoration: none;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
 
             .blog-article-img {
-              height: 260px;
+
+              @include sp {
+                height: auto;
+                width: 100%;
+              }
             }
 
             .blog-article-text-box {
-              position: relative;
-              height: 127px;
+              height: 100%;
               background-color: white;
+              display: flex;
+              flex-direction: column;
+              justify-content: space-between;
 
-              .blog-article-text {
-                color: #333333;
-                font-size: 18px;
-                font-weight: bold;
-                line-height: 1.4;
+              .blog-article-text-wrapper {
+
                 padding: 19px 30px 11px 18px;
+                display: block;
+
+                .blog-article-text {
+                  color: #333333;
+                  font-size: 18px;
+                  font-weight: bold;
+                  line-height: 1.4;
+                }
+
+                p {
+                  display: block;
+                  margin-block-start: 1em;
+                  margin-block-end: 1em;
+                  margin-inline-start: 0px;
+                  margin-inline-end: 0px;
+                }
               }
 
-              .blog-article-date {
-                position: absolute;
-                right: 39px;
-                bottom: 12px;
-                color: #444444;
-                font-size: 16px;
-                font-weight: bold;
-                line-height: 1.6;
+              .blog-article-date-wrapper {
+                text-align: right;
+                padding-bottom: 15px;
+                padding-right: 39px;
+
+                .blog-article-date {
+                  color: #444444;
+                  font-size: 16px;
+                  font-weight: bold;
+                  line-height: 1.6;
+                }
               }
             }
           }

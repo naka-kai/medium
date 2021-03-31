@@ -10,12 +10,21 @@
     text-align: center;
     padding: 64px 0 69px;
 
+    @include sp {
+      padding: 50px 0 30px;
+    }
+
     .works-titletext {
       font-size: 32px;
       font-weight: bold;
       line-height: 0.9;
       color: #333333;
       margin-bottom: 23px;
+
+      @include sp {
+        font-size: 24px;
+        margin-bottom: 10px;
+      }
     }
 
     .works-subtext {
@@ -23,6 +32,10 @@
       font-weight: bold;
       line-height: 1.6;
       color: #3BA6C9;
+
+      @include sp {
+        font-size: 14px;
+      }
     }
   }
 
@@ -32,6 +45,10 @@
 
     @include sspc {
       padding-left: 0;
+    }
+
+    @include sp {
+      margin-bottom: 50px;
     }
 
     .swiper-wrapper {

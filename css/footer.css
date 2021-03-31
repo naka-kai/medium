@@ -14,6 +14,10 @@ body {
   overflow: hidden;
 }
 
+a:hover {
+  opacity: 0.8;
+}
+
 footer {
   background-color: #F8F8F8;
   text-align: center;
@@ -23,6 +27,12 @@ footer {
 @media (max-width: 1000px) {
   footer {
     padding: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  footer {
+    padding: 10px;
   }
 }
 
@@ -40,6 +50,13 @@ footer h1 {
   }
 }
 
+@media (max-width: 375px) {
+  footer h1 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+}
+
 footer .footer-span-wrapper {
   margin-bottom: 57px;
 }
@@ -50,11 +67,23 @@ footer .footer-span-wrapper {
   }
 }
 
+@media (max-width: 375px) {
+  footer .footer-span-wrapper {
+    margin-bottom: 10px;
+  }
+}
+
 footer .footer-span-wrapper .privacy-policy {
   font-size: 16px;
   font-weight: bold;
   line-height: 1.8;
   color: #333333;
+}
+
+@media (max-width: 375px) {
+  footer .footer-span-wrapper .privacy-policy {
+    font-size: 13px;
+  }
 }
 
 footer .footer-span-wrapper .private-commerce {
@@ -64,9 +93,21 @@ footer .footer-span-wrapper .private-commerce {
   color: #333333;
 }
 
+@media (max-width: 375px) {
+  footer .footer-span-wrapper .private-commerce {
+    font-size: 13px;
+  }
+}
+
 footer small {
   font-size: 14px;
   line-height: 1.2;
   color: #333333;
+}
+
+@media (max-width: 375px) {
+  footer small {
+    font-size: 12px;
+  }
 }
 /*# sourceMappingURL=footer.css.map */

@@ -14,15 +14,14 @@ body {
   overflow: hidden;
 }
 
-.blog {
-  height: 668px;
-  background-color: #EEFBFB;
+a:hover {
+  opacity: 0.8;
 }
 
-@media screen and (max-width: 1355px) {
-  .blog {
-    height: 1500px;
-  }
+.blog {
+  height: auto;
+  background-color: #EEFBFB;
+  padding-bottom: 50px;
 }
 
 .blog .blog-container {
@@ -35,6 +34,12 @@ body {
   padding: 64px 0 55px;
 }
 
+@media (max-width: 375px) {
+  .blog .blog-container .blog-title {
+    padding: 50px 0 30px;
+  }
+}
+
 .blog .blog-container .blog-title .blog-titletext {
   color: #333333;
   font-size: 32px;
@@ -43,11 +48,24 @@ body {
   margin-bottom: 23px;
 }
 
+@media (max-width: 375px) {
+  .blog .blog-container .blog-title .blog-titletext {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
+
 .blog .blog-container .blog-title .blog-subtext {
   color: #3BA6C9;
   font-size: 16px;
   font-weight: bold;
   line-height: 1.2;
+}
+
+@media (max-width: 375px) {
+  .blog .blog-container .blog-title .blog-subtext {
+    font-size: 14px;
+  }
 }
 
 .blog .blog-container .blog-article-wrapper .blog-article-box {
@@ -59,7 +77,7 @@ body {
           justify-content: space-between;
 }
 
-@media screen and (max-width: 1355px) {
+@media (max-width: 768px) {
   .blog .blog-container .blog-article-wrapper .blog-article-box {
     display: block;
   }
@@ -67,43 +85,85 @@ body {
 
 .blog .blog-container .blog-article-wrapper .blog-article-box .blog-article-item {
   list-style: none;
-  width: 389px;
+  width: 31%;
+  margin-right: 30px;
   -webkit-box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
 }
 
-@media screen and (max-width: 1355px) {
+@media (max-width: 768px) {
   .blog .blog-container .blog-article-wrapper .blog-article-box .blog-article-item {
-    margin: 0 auto 20px;
+    width: auto;
+    margin-bottom: 30px;
+    margin-right: 0;
   }
 }
 
 .blog .blog-container .blog-article-wrapper .blog-article-box .blog-article-item a {
   text-decoration: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  height: 100%;
 }
 
-.blog .blog-container .blog-article-wrapper .blog-article-box .blog-article-item a .blog-article-img {
-  height: 260px;
+@media (max-width: 375px) {
+  .blog .blog-container .blog-article-wrapper .blog-article-box .blog-article-item a .blog-article-img {
+    height: auto;
+    width: 100%;
+  }
 }
 
 .blog .blog-container .blog-article-wrapper .blog-article-box .blog-article-item a .blog-article-text-box {
-  position: relative;
-  height: 127px;
+  height: 100%;
   background-color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.blog .blog-container .blog-article-wrapper .blog-article-box .blog-article-item a .blog-article-text-box .blog-article-text {
+.blog .blog-container .blog-article-wrapper .blog-article-box .blog-article-item a .blog-article-text-box .blog-article-text-wrapper {
+  padding: 19px 30px 11px 18px;
+  display: block;
+}
+
+.blog .blog-container .blog-article-wrapper .blog-article-box .blog-article-item a .blog-article-text-box .blog-article-text-wrapper .blog-article-text {
   color: #333333;
   font-size: 18px;
   font-weight: bold;
   line-height: 1.4;
-  padding: 19px 30px 11px 18px;
 }
 
-.blog .blog-container .blog-article-wrapper .blog-article-box .blog-article-item a .blog-article-text-box .blog-article-date {
-  position: absolute;
-  right: 39px;
-  bottom: 12px;
+.blog .blog-container .blog-article-wrapper .blog-article-box .blog-article-item a .blog-article-text-box .blog-article-text-wrapper p {
+  display: block;
+  -webkit-margin-before: 1em;
+          margin-block-start: 1em;
+  -webkit-margin-after: 1em;
+          margin-block-end: 1em;
+  -webkit-margin-start: 0px;
+          margin-inline-start: 0px;
+  -webkit-margin-end: 0px;
+          margin-inline-end: 0px;
+}
+
+.blog .blog-container .blog-article-wrapper .blog-article-box .blog-article-item a .blog-article-text-box .blog-article-date-wrapper {
+  text-align: right;
+  padding-bottom: 15px;
+  padding-right: 39px;
+}
+
+.blog .blog-container .blog-article-wrapper .blog-article-box .blog-article-item a .blog-article-text-box .blog-article-date-wrapper .blog-article-date {
   color: #444444;
   font-size: 16px;
   font-weight: bold;

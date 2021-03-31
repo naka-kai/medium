@@ -12,4 +12,8 @@ body {
   width: 100%;
   overflow: hidden;
 }
+
+a:hover {
+  opacity: 0.8;
+}
 /*# sourceMappingURL=style.css.map */

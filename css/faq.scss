@@ -5,15 +5,24 @@
 @import 'style.scss';
 
 .faq {
-  height: 500px;
+  height: auto;
+  padding-bottom: 30px;
 
   .faq-container {
     width: 75%;
     margin: 0 auto;
 
+    @include sp {
+      width: 80%;
+    }
+
     .faq-title {
       text-align: center;
       margin: 64px 0 33px;
+
+      @include sp {
+        margin: 50px 0 30px;
+      }
 
       .faq-titletext {
         font-size: 32px;
@@ -21,6 +30,11 @@
         line-height: 0.9;
         color: #333333;
         margin-bottom: 23px;
+
+        @include sp {
+          font-size: 24px;
+          margin-bottom: 10px;
+        }
       }
 
       .faq-subtext {
@@ -28,6 +42,10 @@
         font-weight: bold;
         line-height: 1.2;
         color: #3BA6C9;
+
+        @include sp {
+          font-size: 14px;
+        }
       }
     }
 
@@ -50,6 +68,10 @@
           font-weight: bold;
           line-height: 1.9;
 
+          @include sp {
+            padding: 20px 10px;
+          }
+
         }
 
         dd {
@@ -61,6 +83,10 @@
           text-align: center;
           background-color: #F2F2F2;
 
+          @include sp {
+            padding: 20px 10px;
+          }
+
           p {
             display: inline-block;
             text-align: left;
@@ -68,6 +94,10 @@
             font-size: 14px;
             font-weight: bold;
             line-height: 1.9;
+
+            @include sp {
+              line-height: 1.5;
+            }
           }
         }
       }

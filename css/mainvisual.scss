@@ -16,6 +16,10 @@
     padding-top: 94px;
   }
 
+  @include sp {
+    padding-top: 70px;
+  }
+
   .mainvisual-container {
     width: 75%;
     margin: 0 auto;
@@ -46,6 +50,10 @@
         color: #333333;
         width: 400px;
         margin: 38px auto;
+
+        @include sp {
+          font-size: 24px;
+        }
       }
 
       p {
@@ -53,33 +61,43 @@
         font-weight: bold;
         line-height: 1.4;
         color: #333333;
+        margin: 0 auto;
+        width: 400px;
       }
 
-      .contact-btn {
-        margin-top: 39px;
-        width: 155px;
-        height: 37px;
-        box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
-        border-radius: 10px;
+      .contact-btn-wrapper {
 
-        @include sspc {
-          margin: 30px auto 0;
-        }
+        width: 400px;
+        margin: 0 auto;
 
-        a {
-          font-size: 14px;
-          font-weight: bold;
-          line-height: 1.2;
-          color: #FFFFFF;
-          text-decoration: none;
-          display: block;
+
+        .contact-btn {
+          margin-top: 39px;
           width: 155px;
           height: 37px;
-          background: linear-gradient(to right, #FA41CC, #6020B0);
-          display: flex;
-          justify-content: center;
-          align-items: center;
+          box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
           border-radius: 10px;
+          // margin: 39px auto 0;
+
+          @include sspc {
+            margin: 30px auto 0;
+          }
+
+          a {
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 1.2;
+            color: #FFFFFF;
+            text-decoration: none;
+            display: block;
+            width: 155px;
+            height: 37px;
+            background: linear-gradient(to right, #FA41CC, #6020B0);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 10px;
+          }
         }
       }
     }
@@ -87,15 +105,15 @@
     .mainvisual-right {
 
       .mainvisual-right-img {
-        height: auto;
+        height: 430px;
         position: absolute;
         top: -20px;
-        right: 0;
-        width: 60%;
+        right: 50px;
+        width: 518px;
 
         @include sspc {
           position: static;
-          width: 30%;
+          width: 60%;
           height: auto;
           display: flex;
           margin: 20px auto;

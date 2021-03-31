@@ -14,6 +14,10 @@ body {
   overflow: hidden;
 }
 
+a:hover {
+  opacity: 0.8;
+}
+
 .mainvisual {
   padding-top: 162px;
   height: 600px;
@@ -26,6 +30,12 @@ body {
 @media (max-width: 1000px) {
   .mainvisual {
     padding-top: 94px;
+  }
+}
+
+@media (max-width: 375px) {
+  .mainvisual {
+    padding-top: 70px;
   }
 }
 
@@ -69,14 +79,27 @@ body {
   margin: 38px auto;
 }
 
+@media (max-width: 375px) {
+  .mainvisual .mainvisual-container .mainvisual-left h1 {
+    font-size: 24px;
+  }
+}
+
 .mainvisual .mainvisual-container .mainvisual-left p {
   font-size: 16px;
   font-weight: bold;
   line-height: 1.4;
   color: #333333;
+  margin: 0 auto;
+  width: 400px;
 }
 
-.mainvisual .mainvisual-container .mainvisual-left .contact-btn {
+.mainvisual .mainvisual-container .mainvisual-left .contact-btn-wrapper {
+  width: 400px;
+  margin: 0 auto;
+}
+
+.mainvisual .mainvisual-container .mainvisual-left .contact-btn-wrapper .contact-btn {
   margin-top: 39px;
   width: 155px;
   height: 37px;
@@ -86,12 +109,12 @@ body {
 }
 
 @media (max-width: 1000px) {
-  .mainvisual .mainvisual-container .mainvisual-left .contact-btn {
+  .mainvisual .mainvisual-container .mainvisual-left .contact-btn-wrapper .contact-btn {
     margin: 30px auto 0;
   }
 }
 
-.mainvisual .mainvisual-container .mainvisual-left .contact-btn a {
+.mainvisual .mainvisual-container .mainvisual-left .contact-btn-wrapper .contact-btn a {
   font-size: 14px;
   font-weight: bold;
   line-height: 1.2;
@@ -115,17 +138,17 @@ body {
 }
 
 .mainvisual .mainvisual-container .mainvisual-right .mainvisual-right-img {
-  height: auto;
+  height: 430px;
   position: absolute;
   top: -20px;
-  right: 0;
-  width: 60%;
+  right: 50px;
+  width: 518px;
 }
 
 @media (max-width: 1000px) {
   .mainvisual .mainvisual-container .mainvisual-right .mainvisual-right-img {
     position: static;
-    width: 30%;
+    width: 60%;
     height: auto;
     display: -webkit-box;
     display: -ms-flexbox;

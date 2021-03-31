@@ -14,8 +14,13 @@ body {
   overflow: hidden;
 }
 
+a:hover {
+  opacity: 0.8;
+}
+
 .faq {
-  height: 500px;
+  height: auto;
+  padding-bottom: 30px;
 }
 
 .faq .faq-container {
@@ -23,9 +28,21 @@ body {
   margin: 0 auto;
 }
 
+@media (max-width: 375px) {
+  .faq .faq-container {
+    width: 80%;
+  }
+}
+
 .faq .faq-container .faq-title {
   text-align: center;
   margin: 64px 0 33px;
+}
+
+@media (max-width: 375px) {
+  .faq .faq-container .faq-title {
+    margin: 50px 0 30px;
+  }
 }
 
 .faq .faq-container .faq-title .faq-titletext {
@@ -36,11 +53,24 @@ body {
   margin-bottom: 23px;
 }
 
+@media (max-width: 375px) {
+  .faq .faq-container .faq-title .faq-titletext {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
+
 .faq .faq-container .faq-title .faq-subtext {
   font-size: 16px;
   font-weight: bold;
   line-height: 1.2;
   color: #3BA6C9;
+}
+
+@media (max-width: 375px) {
+  .faq .faq-container .faq-title .faq-subtext {
+    font-size: 14px;
+  }
 }
 
 .faq .faq-container .faq-list .faq-item:last-child {
@@ -59,6 +89,12 @@ body {
   line-height: 1.9;
 }
 
+@media (max-width: 375px) {
+  .faq .faq-container .faq-list .faq-item dt {
+    padding: 20px 10px;
+  }
+}
+
 .faq .faq-container .faq-list .faq-item dd {
   padding: 21px 0 32px;
   border: 1px solid #E5E5E5;
@@ -69,6 +105,12 @@ body {
   background-color: #F2F2F2;
 }
 
+@media (max-width: 375px) {
+  .faq .faq-container .faq-list .faq-item dd {
+    padding: 20px 10px;
+  }
+}
+
 .faq .faq-container .faq-list .faq-item dd p {
   display: inline-block;
   text-align: left;
@@ -76,5 +118,11 @@ body {
   font-size: 14px;
   font-weight: bold;
   line-height: 1.9;
+}
+
+@media (max-width: 375px) {
+  .faq .faq-container .faq-list .faq-item dd p {
+    line-height: 1.5;
+  }
 }
 /*# sourceMappingURL=faq.css.map */

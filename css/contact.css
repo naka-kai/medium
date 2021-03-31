@@ -14,10 +14,20 @@ body {
   overflow: hidden;
 }
 
+a:hover {
+  opacity: 0.8;
+}
+
 .contact {
   background: -webkit-gradient(linear, left top, right top, from(#05A5FA), to(#63FBD7));
   background: linear-gradient(to right, #05A5FA, #63FBD7);
   height: 1027px;
+}
+
+@media (max-width: 375px) {
+  .contact {
+    height: 750px;
+  }
 }
 
 .contact .contact-container {
@@ -25,9 +35,21 @@ body {
   max-width: 75%;
 }
 
+@media (max-width: 375px) {
+  .contact .contact-container {
+    width: 90%;
+  }
+}
+
 .contact .contact-container .contact-title {
   padding: 72px 0 46px;
   text-align: center;
+}
+
+@media (max-width: 375px) {
+  .contact .contact-container .contact-title {
+    padding: 50px 0 30px;
+  }
 }
 
 .contact .contact-container .contact-title .contact-titletext {
@@ -38,11 +60,24 @@ body {
   margin-bottom: 21px;
 }
 
+@media (max-width: 375px) {
+  .contact .contact-container .contact-title .contact-titletext {
+    font-size: 24px;
+    margin-bottom: 10px;
+  }
+}
+
 .contact .contact-container .contact-title .contact-subtext {
   font-size: 16px;
   font-weight: bold;
   line-height: 1.2;
   color: #FFFFFF;
+}
+
+@media (max-width: 375px) {
+  .contact .contact-container .contact-title .contact-subtext {
+    font-size: 14px;
+  }
 }
 
 .contact .contact-container .contact-comment {
@@ -59,6 +94,12 @@ body {
   padding: 31px 62px 35px;
 }
 
+@media (max-width: 375px) {
+  .contact .contact-container .contact-form {
+    padding: 20px 18px;
+  }
+}
+
 .contact .contact-container .contact-form form .contact-name {
   margin: 0 auto;
 }
@@ -70,6 +111,12 @@ body {
 @media (max-width: 800px) {
   .contact .contact-container .contact-form form .contact-name .contact-name-label-wrapper {
     padding-bottom: 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .contact .contact-container .contact-form form .contact-name .contact-name-label-wrapper {
+    padding-bottom: 12px;
   }
 }
 
@@ -90,6 +137,13 @@ body {
   margin-left: 23px;
 }
 
+@media (max-width: 375px) {
+  .contact .contact-container .contact-form form .contact-name .contact-name-label-wrapper span {
+    padding: 5px 10px;
+    margin-left: 10px;
+  }
+}
+
 .contact .contact-container .contact-form form .contact-name input {
   width: 498px;
   height: 43px;
@@ -100,6 +154,12 @@ body {
 @media (max-width: 800px) {
   .contact .contact-container .contact-form form .contact-name input {
     width: 80%;
+  }
+}
+
+@media (max-width: 375px) {
+  .contact .contact-container .contact-form form .contact-name input {
+    height: 30px;
   }
 }
 
@@ -114,6 +174,12 @@ body {
 @media (max-width: 800px) {
   .contact .contact-container .contact-form form .contact-mail .contact-mail-label-wrapper {
     padding: 25px 0 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .contact .contact-container .contact-form form .contact-mail .contact-mail-label-wrapper {
+    padding-bottom: 12px;
   }
 }
 
@@ -134,6 +200,13 @@ body {
   margin-left: 23px;
 }
 
+@media (max-width: 375px) {
+  .contact .contact-container .contact-form form .contact-mail .contact-mail-label-wrapper span {
+    padding: 5px 10px;
+    margin-left: 10px;
+  }
+}
+
 .contact .contact-container .contact-form form .contact-mail input {
   width: 498px;
   height: 43px;
@@ -144,6 +217,12 @@ body {
 @media (max-width: 800px) {
   .contact .contact-container .contact-form form .contact-mail input {
     width: 80%;
+  }
+}
+
+@media (max-width: 375px) {
+  .contact .contact-container .contact-form form .contact-mail input {
+    height: 30px;
   }
 }
 
@@ -158,6 +237,12 @@ body {
 @media (max-width: 800px) {
   .contact .contact-container .contact-form form .contact-contents .contact-contents-label-wrapper {
     padding: 25px 0 20px;
+  }
+}
+
+@media (max-width: 375px) {
+  .contact .contact-container .contact-form form .contact-contents .contact-contents-label-wrapper {
+    padding-bottom: 12px;
   }
 }
 
@@ -178,11 +263,24 @@ body {
   margin-left: 23px;
 }
 
+@media (max-width: 375px) {
+  .contact .contact-container .contact-form form .contact-contents .contact-contents-label-wrapper span {
+    padding: 5px 10px;
+    margin-left: 10px;
+  }
+}
+
 .contact .contact-container .contact-form form .contact-contents textarea {
   width: 100%;
   height: 179px;
   background-color: #EEFBFB;
   border: none;
+}
+
+@media (max-width: 375px) {
+  .contact .contact-container .contact-form form .contact-contents textarea {
+    height: 100px;
+  }
 }
 
 .contact .contact-container .contact-form form .contact-check {
@@ -209,6 +307,13 @@ body {
   }
 }
 
+@media (max-width: 375px) {
+  .contact .contact-container .contact-form form .contact-check input {
+    width: 15px;
+    height: 15px;
+  }
+}
+
 .contact .contact-container .contact-form form .contact-check label {
   font-size: 16px;
   font-weight: bold;
@@ -220,6 +325,16 @@ body {
   .contact .contact-container .contact-form form .contact-check label {
     font-size: 14px;
   }
+}
+
+@media (max-width: 375px) {
+  .contact .contact-container .contact-form form .contact-check label {
+    font-size: 13px;
+  }
+}
+
+.contact .contact-container .contact-form form #submit[disabled] {
+  cursor: not-allowed;
 }
 
 .contact .contact-container .contact-form form .contact-submit {
@@ -237,5 +352,24 @@ body {
   border: none;
   background: -webkit-gradient(linear, left top, right top, from(#FA41CC), to(#6020B0));
   background: linear-gradient(to right, #FA41CC, #6020B0);
+}
+
+@media (max-width: 375px) {
+  .contact .contact-container .contact-form form .contact-submit input {
+    padding: 10px 30px;
+  }
+}
+
+.contact .contact-container .contact-form form .contact-submit .alert {
+  display: none;
+  color: red;
+}
+
+.contact .contact-container .contact-form .end-message {
+  display: none;
+}
+
+.contact .contact-container .contact-form .false-message {
+  display: none;
 }
 /*# sourceMappingURL=contact.css.map */
