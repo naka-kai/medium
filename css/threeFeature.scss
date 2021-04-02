@@ -21,14 +21,6 @@
     width: 75%;
     margin: 0 auto;
 
-    @include sspc {
-      padding-top: 140px;
-    }
-
-    @include sp {
-      padding-top: 30px;
-    }
-
     .threeFeature-title {
       text-align: center;
       padding: 0 0 73px;
@@ -81,7 +73,11 @@
         margin-bottom: 30px;
 
         @media screen and (max-width: 800px) {
-          margin-bottom: 20px;
+          margin-bottom: 30px;
+        }
+
+        @include sp {
+          font-size: 20px;
         }
       }
 
@@ -99,7 +95,7 @@
           .speedCoding-img {
             width: 470px;
             height: auto;
-            margin-top: 30px;
+            // margin-top: 30px;
 
             @media screen and (max-width: 1400px) {
               width: 350px;
@@ -163,7 +159,7 @@
               font-weight: bold;
               line-height: 2;
               color: #333333;
-              margin: 30px 0 54px;
+              margin: 0 0 49px;
 
               br {
                 @media screen and (max-width: 1400px) {
@@ -183,6 +179,7 @@
 
               @media screen and (max-width: 730px) {
                 text-align: center;
+                margin: 30px 0 20px;
               }
             }
 
@@ -369,8 +366,12 @@
       text-align: center;
 
       @media screen and (max-width: 800px) {
+        margin: 70px 0 30px;
+      }
+
+      @include sp {
+        margin: 40px 0 30px;
         font-size: 20px;
-        // margin: 40px 0 30px;
       }
     }
 

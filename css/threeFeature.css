@@ -41,18 +41,6 @@ a:hover {
   margin: 0 auto;
 }
 
-@media (max-width: 1000px) {
-  .threeFeature .threeFeature-container {
-    padding-top: 140px;
-  }
-}
-
-@media (max-width: 375px) {
-  .threeFeature .threeFeature-container {
-    padding-top: 30px;
-  }
-}
-
 .threeFeature .threeFeature-container .threeFeature-title {
   text-align: center;
   padding: 0 0 73px;
@@ -113,7 +101,13 @@ a:hover {
 
 @media screen and (max-width: 800px) {
   .threeFeature .threeFeature-container .speedCoding .speedCoding-title {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .threeFeature .threeFeature-container .speedCoding .speedCoding-title {
+    font-size: 20px;
   }
 }
 
@@ -136,7 +130,6 @@ a:hover {
 .threeFeature .threeFeature-container .speedCoding .speedCoding-inner .speedCoding-img-wrapper .speedCoding-img {
   width: 470px;
   height: auto;
-  margin-top: 30px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -225,7 +218,7 @@ a:hover {
   font-weight: bold;
   line-height: 2;
   color: #333333;
-  margin: 30px 0 54px;
+  margin: 0 0 49px;
 }
 
 @media screen and (max-width: 1400px) {
@@ -251,6 +244,7 @@ a:hover {
 @media screen and (max-width: 730px) {
   .threeFeature .threeFeature-container .speedCoding .speedCoding-inner .speedCoding-description .speedCoding-description-t-wrapper .speedCoding-description-title {
     text-align: center;
+    margin: 30px 0 20px;
   }
 }
 
@@ -473,6 +467,13 @@ a:hover {
 
 @media screen and (max-width: 800px) {
   .threeFeature .speedResponse .speedResponse-title {
+    margin: 70px 0 30px;
+  }
+}
+
+@media (max-width: 375px) {
+  .threeFeature .speedResponse .speedResponse-title {
+    margin: 40px 0 30px;
     font-size: 20px;
   }
 }
