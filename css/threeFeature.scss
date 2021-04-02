@@ -9,6 +9,10 @@
   margin-bottom: 157px;
   display: block;
 
+  @media screen and (max-width: 1100px) {
+    margin-bottom: 100px;
+  }
+
   @include sp {
     margin-bottom: 50px;
   }
@@ -18,7 +22,6 @@
     margin: 0 auto;
 
     @include sspc {
-      // width: 95%;
       padding-top: 140px;
     }
 
@@ -80,10 +83,6 @@
         @media screen and (max-width: 800px) {
           margin-bottom: 20px;
         }
-
-        @include sp {
-          font-size: 20px;
-        }
       }
 
       .speedCoding-inner {
@@ -118,10 +117,9 @@
               width: 220px;
             }
 
-            // @media screen and (max-width:638px) {
-            //   width: 50%;
-            // }
-
+            @media screen and (max-width:730px) {
+              width: 50%;
+            }
           }
         }
 
@@ -152,6 +150,10 @@
               width: 75%;
               margin: 0 auto;
               text-align: center;
+            }
+
+            @media screen and (max-width: 650px) {
+              width: 100%;
             }
 
             .speedCoding-description-title {
@@ -252,13 +254,11 @@
 
           @media screen and (max-width:730px) {
             margin: 0 auto 20px;
-            // text-align: center;
           }
 
           .highQuality-img {
             width: 550px;
             height: auto;
-            // margin-left: 30px;
 
             @media screen and (max-width: 1400px) {
               width: 400px;
@@ -283,13 +283,6 @@
         }
 
         .highQuality-description {
-          // margin-left: auto;
-          // width: 50%;
-
-          // @media screen and (max-width: 638px) {
-          //   margin: 0 auto;
-          //   text-align: center;
-          // }
 
           .highQuality-description-t-wrapper {
             width: 470px;
@@ -315,6 +308,10 @@
               margin: 0 auto;
             }
 
+            @media screen and (max-width: 650px) {
+              width: 100%;
+            }
+
             .highQuality-description-title {
               font-size: 24px;
               font-weight: bold;
@@ -337,11 +334,6 @@
                 line-height: 1.5;
                 font-size: 18px;
               }
-
-              // @media screen and (max-width: 730px) {
-              //   margin: 30px 0 20px;
-              //   text-align: center;
-              // }
             }
           }
 
@@ -360,9 +352,6 @@
             @media screen and (max-width: 1100px) {
               font-size: 14px;
             }
-
-            // @include sp {
-            //   text-align: center;
           }
         }
       }
@@ -376,48 +365,86 @@
       font-weight: bold;
       line-height: 0.9;
       color: #333333;
-      margin: 93px 0 67px;
+      margin: 93px 0 64px;
       text-align: center;
 
-      @include sp {
+      @media screen and (max-width: 800px) {
         font-size: 20px;
-        margin: 40px 0 30px;
+        // margin: 40px 0 30px;
       }
     }
 
     .speedResponse-inner {
       display: flex;
+      align-items: center;
 
-      @include sp {
+      @media screen and (max-width:730px) {
         display: block;
+        text-align: center;
       }
 
       .speedResponse-img-wrapper {
 
-        width: 50%;
-
         .speedResponse-img {
           width: 400px;
           height: 290px;
-          // margin-right: 20px;
 
-          @include ipad {
+          @media screen and (max-width: 1400px) {
+            width: 350px;
+            height: auto;
+          }
+
+          @media screen and (max-width: 1100px) {
+            width: 300px;
+          }
+
+          @media screen and (max-width: 950px) {
+            width: 250px;
+          }
+
+          @media screen and (max-width: 800px) {
+            width: 220px;
+          }
+
+          @media screen and (max-width:730px) {
             width: 50%;
-            height: 50%;
           }
         }
       }
 
       .speedResponse-description {
         margin-left: auto;
-        width: 50%;
-        text-align: right;
+        justify-content: center;
 
         .speedResponse-description-t-wrapper {
 
-          width: 500px;
-          margin: 0 0 0 auto;
-          text-align: left;
+          width: 550px;
+
+          @media screen and (max-width: 1400px) {
+            width: 400px;
+          }
+
+          @media screen and (max-width: 1100px) {
+            width: 350px;
+          }
+
+          @media screen and (max-width: 950px) {
+            width: 300px;
+          }
+
+          @media screen and (max-width: 800px) {
+            width: 270px;
+          }
+
+          @media screen and (max-width: 730px) {
+            width: 75%;
+            margin: 0 auto;
+            text-align: center;
+          }
+
+          @media screen and (max-width: 650px) {
+            width: 100%;
+          }
 
           .speedResponse-description-title {
             display: inline-block;
@@ -428,15 +455,25 @@
             color: #333333;
             margin: 0 0 49px;
 
-            @include ipad {
-              font-size: 20px;
+            br {
+              @media screen and (max-width: 1400px) {
+                display: none;
+              }
             }
 
-            @include sp {
-              font-size: 18px;
+            @media screen and (max-width: 1100px) {
+              font-size: 20px;
+              margin-bottom: 20px;
+            }
+
+            @media screen and (max-width: 800px) {
               line-height: 1.5;
-              margin: 30px 0 20px;
+              font-size: 18px;
+            }
+
+            @media screen and (max-width: 730px) {
               text-align: center;
+              margin: 30px 0 20px;
             }
           }
 
@@ -448,11 +485,17 @@
             line-height: 1.8;
             color: #333333;
 
-            @include ipad {
+            br {
+              @media screen and (max-width: 1400px) {
+                display: none;
+              }
+            }
+
+            @media screen and (max-width: 1100px) {
               font-size: 14px;
             }
 
-            @include sp {
+            @media screen and (max-width: 730px) {
               text-align: center;
             }
           }
