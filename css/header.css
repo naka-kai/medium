@@ -88,6 +88,12 @@ header .header-container .header-left a p {
   color: #333333;
 }
 
+@media screen and (max-width: 350px) {
+  header .header-container .header-left a p {
+    font-size: 23px;
+  }
+}
+
 @media (max-width: 1000px) {
   header .header-container .header-center .header-pc-nav {
     display: none;
@@ -236,7 +242,7 @@ header .header-container .header-right .contact-btn a {
   }
 }
 
-@media (max-width: 1000px) and (max-width: 375px) {
+@media screen and (max-width: 1000px) and (max-width: 450px) {
   .header-sp-nav .menu-list {
     margin: 40px auto 20px;
     width: 53%;
@@ -245,6 +251,18 @@ header .header-container .header-right .contact-btn a {
   .header-sp-nav .menu-list:last-child {
     width: 70%;
     height: 10%;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 360px) {
+  .header-sp-nav .menu-list {
+    margin: 30px auto 10px;
+    width: 45%;
+    height: 6%;
+  }
+  .header-sp-nav .menu-list:last-child {
+    width: 60%;
+    height: 8%;
   }
 }
 
@@ -265,6 +283,15 @@ header .header-container .header-right .contact-btn a {
     height: 100%;
     width: 100%;
   }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 360px) {
+  .header-sp-nav .menu-list a {
+    font-size: 80%;
+  }
+}
+
+@media (max-width: 1000px) {
   .header-sp-nav .menu-list a span {
     padding-bottom: 5px;
     border-bottom: 2px solid #1be6f5;
@@ -300,6 +327,12 @@ header .header-container .header-right .contact-btn a {
     height: 30px;
     right: 30px;
     top: 15px;
+  }
+}
+
+@media screen and (max-width: 1000px) and (max-width: 350px) {
+  .ham {
+    right: 15px;
   }
 }
 

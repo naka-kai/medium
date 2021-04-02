@@ -6,16 +6,7 @@
 
 .price {
   height: auto;
-  // height: 744px;
   background-color: #EEFBFB;
-
-  @include sspc {
-    // height: 550px;
-  }
-
-  @include sp {
-    // height: 500px;
-  }
 
   .price-container {
     width: 75%;
@@ -62,9 +53,9 @@
       margin: 71px auto 41px;
       box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
       background-color: white;
+      width: 100%;
 
       @include sspc {
-        width: 90%;
         margin-top: 50px;
       }
 
@@ -85,7 +76,7 @@
           br {
             display: none;
 
-            @include sp {
+            @media screen and (max-width: 750px) {
               display: block;
             }
           }
@@ -94,10 +85,10 @@
             padding: 20px 34px 20px 19px;
           }
 
-          @include sp {
+          @media screen and (max-width: 378px) {
             font-size: 14px;
-            padding: 10px 15px 10px 10px;
-            white-space: nowrap
+            padding: 10px;
+            white-space: nowrap;
           }
         }
 
@@ -121,11 +112,14 @@
             padding: 20px 200px 20px 31px;
           }
 
-          @include sp {
-            font-size: 14px;
+          @media screen and (max-width: 750px) {
             padding: 15px 50px 10px 10px;
             white-space: nowrap;
             vertical-align: middle;
+          }
+
+          @include sp {
+            font-size: 14px;
           }
         }
       }
@@ -138,6 +132,14 @@
       line-height: 1.6;
       color: #444444;
       padding-bottom: 30px;
+
+      br {
+        display: none;
+
+        @media screen and (max-width: 390px) {
+          display: block;
+        }
+      }
 
       @include sp {
         font-size: 14px;

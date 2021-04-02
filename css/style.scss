@@ -2,12 +2,20 @@
 
 /* メディアクエリ */
 
-$mpc: 1200px; //中位のPC
-$spc:1065px; //小さいPC
+$bpc: 1920px; //大きいPC
+$mpc: 1280px; //中位のPC
+$spc: 1065px; //小さいPC
 $sspc: 1000px; //もっと小さいPC
-$bsp: 800px; //大きいスマホ
+$bipad: 800px; //ipadより大きい
 $ipad: 768px; // iPad
+$sipad: 590px; // iPadより大きい
 $sp: 375px; // スマホ
+
+@mixin bpc {
+  @media (max-width: ($bpc)) {
+    @content;
+  }
+}
 
 @mixin mpc {
   @media (max-width: ($mpc)) {
@@ -27,14 +35,20 @@ $sp: 375px; // スマホ
   }
 }
 
-@mixin bsp {
-  @media (max-width: ($bsp)) {
+@mixin bipad {
+  @media (max-width: ($bipad)) {
     @content;
   }
 }
 
 @mixin ipad {
   @media (max-width: ($ipad)) {
+    @content;
+  }
+}
+
+@mixin sipad {
+  @media (max-width: ($sipad)) {
     @content;
   }
 }

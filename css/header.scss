@@ -58,6 +58,10 @@ header {
           font-weight: bold;
           line-height: 1.2;
           color: #333333;
+
+          @media screen and (max-width: 350px) {
+            font-size: 23px;
+          }
         }
       }
     }
@@ -187,7 +191,7 @@ header {
       background-color: rgba(256, 256, 256, 0.9);
       position: relative;
 
-      @include sp {
+      @media screen and (max-width: 450px) {
         margin: 40px auto 20px;
         width: 53%;
         height: 8%;
@@ -195,6 +199,17 @@ header {
         &:last-child {
           width: 70%;
           height: 10%;
+        }
+      }
+
+      @media screen and (max-width: 360px) {
+        margin: 30px auto 10px;
+        width: 45%;
+        height: 6%;
+
+        &:last-child {
+          width: 60%;
+          height: 8%;
         }
       }
 
@@ -207,6 +222,10 @@ header {
         align-items: center;
         height: 100%;
         width: 100%;
+
+        @media screen and (max-width: 360px) {
+          font-size: 80%;
+        }
 
         span {
           padding-bottom: 5px;
@@ -241,6 +260,10 @@ header {
       height: 30px;
       right: 30px;
       top: 15px;
+    }
+
+    @media screen and (max-width: 350px) {
+      right: 15px;
     }
 
     &-list {

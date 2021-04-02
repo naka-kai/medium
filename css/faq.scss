@@ -68,7 +68,7 @@
           font-weight: bold;
           line-height: 1.9;
 
-          @include sp {
+          @include sspc {
             padding: 20px 10px;
           }
 
@@ -83,7 +83,7 @@
           text-align: center;
           background-color: #F2F2F2;
 
-          @include sp {
+          @include sspc {
             padding: 20px 10px;
           }
 

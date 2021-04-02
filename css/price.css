@@ -78,11 +78,11 @@ a:hover {
   -webkit-box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
           box-shadow: 0 3px 5px rgba(0, 0, 0, 0.16);
   background-color: white;
+  width: 100%;
 }
 
 @media (max-width: 1000px) {
   .price .price-container .price-table {
-    width: 90%;
     margin-top: 50px;
   }
 }
@@ -107,7 +107,7 @@ a:hover {
   display: none;
 }
 
-@media (max-width: 375px) {
+@media screen and (max-width: 750px) {
   .price .price-container .price-table tr th br {
     display: block;
   }
@@ -119,10 +119,10 @@ a:hover {
   }
 }
 
-@media (max-width: 375px) {
+@media screen and (max-width: 378px) {
   .price .price-container .price-table tr th {
     font-size: 14px;
-    padding: 10px 15px 10px 10px;
+    padding: 10px;
     white-space: nowrap;
   }
 }
@@ -154,12 +154,17 @@ a:hover {
   }
 }
 
-@media (max-width: 375px) {
+@media screen and (max-width: 750px) {
   .price .price-container .price-table tr td {
-    font-size: 14px;
     padding: 15px 50px 10px 10px;
     white-space: nowrap;
     vertical-align: middle;
+  }
+}
+
+@media (max-width: 375px) {
+  .price .price-container .price-table tr td {
+    font-size: 14px;
   }
 }
 
@@ -170,6 +175,16 @@ a:hover {
   line-height: 1.6;
   color: #444444;
   padding-bottom: 30px;
+}
+
+.price .price-container .price-caution br {
+  display: none;
+}
+
+@media screen and (max-width: 390px) {
+  .price .price-container .price-caution br {
+    display: block;
+  }
 }
 
 @media (max-width: 375px) {

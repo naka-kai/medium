@@ -89,7 +89,7 @@ a:hover {
   line-height: 1.9;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 1000px) {
   .faq .faq-container .faq-list .faq-item dt {
     padding: 20px 10px;
   }
@@ -105,7 +105,7 @@ a:hover {
   background-color: #F2F2F2;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 1000px) {
   .faq .faq-container .faq-list .faq-item dd {
     padding: 20px 10px;
   }

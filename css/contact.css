@@ -21,21 +21,16 @@ a:hover {
 .contact {
   background: -webkit-gradient(linear, left top, right top, from(#05A5FA), to(#63FBD7));
   background: linear-gradient(to right, #05A5FA, #63FBD7);
-  height: 1027px;
-}
-
-@media (max-width: 375px) {
-  .contact {
-    height: 750px;
-  }
+  height: auto;
 }
 
 .contact .contact-container {
   margin: 0 auto;
   max-width: 75%;
+  padding-bottom: 30px;
 }
 
-@media (max-width: 375px) {
+@media (max-width: 800px) {
   .contact .contact-container {
     max-width: 90%;
   }

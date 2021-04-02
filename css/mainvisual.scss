@@ -6,19 +6,25 @@
 
 .mainvisual {
   padding-top: 162px;
-  height: 800px;
+  height: 600px;
+  // height: auto;
   background-image: url(../img/circle.png);
   background-size: 800px 800px;
   background-repeat: no-repeat;
   background-position: top -150px right -100px;
 
-  @include sspc {
+  @include mpc {
     padding-top: 94px;
+    height: 700px;
+  }
+
+  @include sipad {
+    height: auto;
   }
 
   @include sp {
     padding-top: 70px;
-    height: 580px;
+    // height: 580px;
   }
 
   .mainvisual-container {
@@ -28,7 +34,7 @@
     position: relative;
     z-index: 2;
 
-    @include sspc {
+    @include mpc {
       width: 100%;
       display: block;
       position: static;
@@ -38,7 +44,7 @@
       width: 40%;
       z-index: 3;
 
-      @include sspc {
+      @include mpc {
         width: 100%;
         text-align: center;
       }
@@ -54,6 +60,7 @@
 
         @include sp {
           font-size: 24px;
+          width: auto;
         }
       }
 
@@ -64,6 +71,10 @@
         color: #333333;
         margin: 0 auto;
         width: 400px;
+
+        @include sp {
+          width: auto;
+        }
       }
 
       .contact-btn-wrapper {
@@ -71,16 +82,18 @@
         width: 400px;
         margin: 0 auto;
 
+        @include sp {
+          width: auto;
+        }
 
         .contact-btn {
-          margin-top: 39px;
           width: 155px;
           height: 37px;
           box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16);
           border-radius: 10px;
-          // margin: 39px auto 0;
+          margin: 39px auto 0;
 
-          @include sspc {
+          @include mpc {
             margin: 30px auto 0;
           }
 
@@ -112,9 +125,10 @@
         right: 50px;
         width: 518px;
 
-        @include sspc {
+        @include mpc {
           position: static;
           width: 60%;
+          max-width: 350px;
           height: auto;
           display: flex;
           margin: 20px auto 0;
