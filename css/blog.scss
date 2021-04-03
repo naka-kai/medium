@@ -75,6 +75,7 @@
             height: 100%;
 
             .blog-article-img {
+              width: 100%;
 
               @include sp {
                 height: auto;
@@ -94,19 +95,19 @@
                 padding: 19px 30px 11px 18px;
                 display: block;
 
+                @include sspc {
+                  padding: 10px;
+                }
+
                 .blog-article-text {
                   color: #333333;
                   font-size: 18px;
                   font-weight: bold;
                   line-height: 1.4;
-                }
 
-                p {
-                  display: block;
-                  margin-block-start: 1em;
-                  margin-block-end: 1em;
-                  margin-inline-start: 0px;
-                  margin-inline-end: 0px;
+                  @include sspc {
+                    font-size: 16px;
+                  }
                 }
               }
 

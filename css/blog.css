@@ -111,6 +111,10 @@ a:hover {
   height: 100%;
 }
 
+.blog .blog-container .blog-article-wrapper .blog-article-box .blog-article-item a .blog-article-img {
+  width: 100%;
+}
+
 @media (max-width: 375px) {
   .blog .blog-container .blog-article-wrapper .blog-article-box .blog-article-item a .blog-article-img {
     height: auto;
@@ -138,6 +142,12 @@ a:hover {
   display: block;
 }
 
+@media (max-width: 1000px) {
+  .blog .blog-container .blog-article-wrapper .blog-article-box .blog-article-item a .blog-article-text-box .blog-article-text-wrapper {
+    padding: 10px;
+  }
+}
+
 .blog .blog-container .blog-article-wrapper .blog-article-box .blog-article-item a .blog-article-text-box .blog-article-text-wrapper .blog-article-text {
   color: #333333;
   font-size: 18px;
@@ -145,16 +155,10 @@ a:hover {
   line-height: 1.4;
 }
 
-.blog .blog-container .blog-article-wrapper .blog-article-box .blog-article-item a .blog-article-text-box .blog-article-text-wrapper p {
-  display: block;
-  -webkit-margin-before: 1em;
-          margin-block-start: 1em;
-  -webkit-margin-after: 1em;
-          margin-block-end: 1em;
-  -webkit-margin-start: 0px;
-          margin-inline-start: 0px;
-  -webkit-margin-end: 0px;
-          margin-inline-end: 0px;
+@media (max-width: 1000px) {
+  .blog .blog-container .blog-article-wrapper .blog-article-box .blog-article-item a .blog-article-text-box .blog-article-text-wrapper .blog-article-text {
+    font-size: 16px;
+  }
 }
 
 .blog .blog-container .blog-article-wrapper .blog-article-box .blog-article-item a .blog-article-text-box .blog-article-date-wrapper {
